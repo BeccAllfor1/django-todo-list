@@ -10,10 +10,10 @@ from django.contrib.auth.models import User
 class Todo(models.Model):
     title = models.CharField(max_length=100)
     details = models.TextField()
+    date = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="todos", default=1
     )
-    date = models.DateTimeField(default=timezone.now)
 
  
     def __str__(self):
