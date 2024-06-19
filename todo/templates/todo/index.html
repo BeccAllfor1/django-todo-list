@@ -15,7 +15,7 @@
 
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),
 			0 6px 20px 0 rgba(0,0,0,0.39);
-background: lightpink;
+background: rgb(82, 189, 231);
 margin-bottom : 5%;
 border-radius: 25px;
 padding : 2%;
@@ -24,17 +24,23 @@ resize: both;
 text-overflow: ellipsis;
 }
 .card:hover{
-	background: lightblue;
+	background: rgb(230, 173, 221);
 }
 
 .submit_form{
-
+    
+	
 	text-align: center;
 	padding: 3%;
-	background: pink;
+	background: rgb(36, 132, 170);
 	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),
 				0 6px 20px 0 rgba(0,0,0,0.36);
+}
+
+h1 {
+font-weight: 700;
+text-shadow:10px 10px 15px rgb(36, 132, 170, 20);
 }
 </style>
 
@@ -44,20 +50,20 @@ text-overflow: ellipsis;
 
 {% if messages %}
 {% for message in messages %}
-<div class="alert alert-info">
+<div class="alert alert-{{ message.tags }}">
 	<strong>{{message}}</strong>
 </div>
 {% endfor %}
 {% endif %}
 
 <center class="row">
-	<h1><i>__TODO LIST__</i></h1>
+	<h1><i>TODO LIST</i></h1>
 	<hr />
 </center>
 
 <div class="row">
 
-	<div class="col-md-8">
+	<div class="col-md-6">
 
 	{% for i in list %}
 	<div class="card">
@@ -66,6 +72,8 @@ text-overflow: ellipsis;
 		{{i.date}}
 		<hr/>
 		{{i.details}}
+		<hr/>
+		{{i.author}}
 		<br />
 		<br />
 		<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
@@ -76,7 +84,7 @@ text-overflow: ellipsis;
 	{% endfor%}
 	</div>
 	<div class="col-md-1"> </div>
-	<div class="col-md-3" >
+	<div class="col-md-3">
 	<div class="submit_form">
 	<form method="POST">
 		{% csrf_token %}

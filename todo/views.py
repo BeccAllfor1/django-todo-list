@@ -3,7 +3,6 @@ from django.contrib import messages
 
 
 # import todo form and models
- 
 from .forms import TodoForm
 from .models import Todo
 # Create your views here.
@@ -14,7 +13,11 @@ def index(request):
         form = TodoForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request,"Todo item added successfully!")
             return redirect('todo')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+
     form = TodoForm()
  
     page = {
