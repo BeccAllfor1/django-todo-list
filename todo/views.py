@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponseRedirect
 from django.contrib import messages
 
 
@@ -14,7 +15,7 @@ def index(request):
         if form.is_valid():
             form.save()
             messages.success(request,"Todo item added successfully!")
-            return redirect('todo')
+            return redirect('home')
         else:
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
@@ -32,4 +33,6 @@ def remove(request, item_id):
     item = Todo.objects.get(id=item_id)
     item.delete()
     messages.info(request, "item removed !!!")
-    return redirect('todo')
+    return redirect('home')
+
+ 

@@ -12,7 +12,7 @@ class Todo(models.Model):
     details = models.TextField()
     date = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="todos", default=1
+        User, on_delete=models.CASCADE, related_name="todo", default=1
     )
 
  
