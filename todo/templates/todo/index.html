@@ -1,116 +1,66 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-
-	
-	<!--style-->
-	<style>
-		.card {
-
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
-				0 6px 20px 0 rgba(0, 0, 0, 0.39);
-			background: rgb(82, 189, 231);
-			margin-bottom: 5%;
-			border-radius: 25px;
-			padding: 2%;
-			overflow: auto;
-			resize: both;
-			text-overflow: ellipsis;
-		}
-
-		.card:hover {
-			background: rgb(172, 4, 146);
-		}
-
-		#id_details {
-			max-width: 100%;
-			width: 100%;
-			min-height: 150px;
-			box-sizing: border-box;
-		}
-
-		.submit_form {
 
 
-			text-align: center;
-			padding: 3%;
-			background: rgb(36, 132, 170);
-			border-radius: 25px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
-				0 6px 20px 0 rgba(0, 0, 0, 0.36);
-		}
 
-		h1 {
-			margin-top: 150px;
-			font-weight: 700;
-			text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
-		}
-		.alert{
-			margin-top: 150px;
-		}
-	</style>
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }}">
+	<strong>{{message}}</strong>
+</div>
+{% endfor %}
+{% endif %}
 
-</head>
-	{% if messages %}
-	{% for message in messages %}
-	<div class="alert alert-{{ message.tags }}">
-		<strong>{{message}}</strong>
-	</div>
-	{% endfor %}
-	{% endif %}
+<center class="row">
+	<h1><i>TODO LIST</i></h1>
+	<hr />
+</center>
 
-	<center class="row">
-		<h1><i>TODO LIST</i></h1>
-		<hr />
-	</center>
+<div class="row">
 
-	<div class="row">
+	<div class="col-md-6">
 
-		<div class="col-md-6">
-
-			{% for i in list %}
-			<div class="card">
-				<center><b>{{i.title}}</b></center>
-				<hr />
-				{{i.date}}
-				<hr />
-				{{i.details}}
-				<hr />
-				{{i.author}}
-				<br />
-				<br />
-				<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
-					{% csrf_token %}
-					<button value="remove" type="submit" class="btn btn-primary" style="float: right;"><span
-							class="glyphicon glyphicon-trash"></span> remove</button>
-				</form>
-			</div>
-			{% endfor%}
+		{% for i in list %}
+		<div class="card">
+			<center><b>{{i.title}}</b></center>
+			<hr />
+			{{i.date}}
+			<hr />
+			{{i.details}}
+			<hr />
+			{{i.author}}
+			<br />
+			<br />
+			<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
+				{% csrf_token %}
+				<button value="remove" type="submit" class="btn btn-primary" style="float: right;"><span
+						class="glyphicon glyphicon-trash"></span> remove</button>
+			</form>
 		</div>
-		<div class="col-md-1"></div>
-		<div class="col-md-3">
-			<div class="submit_form">
-				<form method="POST">
-					{% csrf_token %}
-					{% for field in forms %}
-					<div class="form-group">
-						<label for="{{ field.id_for_label }}" class="form-label">{{ field.label_tag }}</label>
-						{{ field }}
-					</div>
-					{% endfor %}
-					<center>
-						<input type="submit" class="btn btn-default" value="submit" />
-					</center>
-				</form>
-			</div>
+		{% endfor%}
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-3">
+		<div class="submit_form">
+			<form method="POST">
+				{% csrf_token %}
+				{% for field in forms %}
+				<div class="form-group">
+					<label for="{{ field.id_for_label }}" class="form-label">{{ field.label_tag }}</label>
+					{{ field }}
+				</div>
+				{% endfor %}
+				<center>
+					<input type="submit" class="btn btn-default" value="submit" />
+				</center>
+			</form>
 		</div>
 	</div>
+</div>
 
-	{% endblock %}
-	{% block copyright %}
-	Copyright 2024 Rebecca Allford
-	{% endblock %}
+{% endblock %}
+{% block copyright %}
+Copyright 2024 Rebecca Allford
+{% endblock %}

@@ -1,0 +1,44 @@
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+        0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    background: rgb(82, 189, 231);
+    margin-bottom: 5%;
+    border-radius: 25px;
+    padding: 2%;
+    overflow: auto;
+    resize: both;
+    text-overflow: ellipsis;
+}
+
+.card:hover {
+    background: rgb(172, 4, 146);
+}
+
+#id_details {
+    max-width: 100%;
+    width: 100%;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
+.submit_form {
+
+
+    text-align: center;
+    padding: 3%;
+    background: rgb(36, 132, 170);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+h1 {
+    margin-top: 150px;
+    font-weight: 700;
+    text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
+}
+
+.alert {
+    margin-top: 150px;
+}
