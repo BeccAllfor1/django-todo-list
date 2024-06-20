@@ -1,14 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
 
-	<meta charset="utf-8">
-	<title>{{title}}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<!--style-->
 	<style>
 		.card {
@@ -57,9 +55,6 @@
 	</style>
 
 </head>
-
-<body class="container-fluid">
-
 	{% if messages %}
 	{% for message in messages %}
 	<div class="alert alert-{{ message.tags }}">
@@ -115,6 +110,7 @@
 		</div>
 	</div>
 
-</body>
-
-</html>
+	{% endblock %}
+	{% block copyright %}
+	Copyright 2024 Rebecca Allford
+	{% endblock %}
