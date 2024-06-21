@@ -4,6 +4,7 @@
         0 6px 20px 0 rgba(0, 0, 0, 0.39);
     background: rgb(82, 189, 231);
     margin-bottom: 5%;
+    margin-left: 5px;
     border-radius: 25px;
     padding: 2%;
     overflow: auto;
@@ -22,15 +23,20 @@
     box-sizing: border-box;
 }
 
+#id_title {
+    max-width: 100%;
+}
+
 .submit_form {
 
-
+    min-width: 200px;
     text-align: center;
     padding: 3%;
     background: rgb(36, 132, 170);
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
         0 6px 20px 0 rgba(0, 0, 0, 0.36);
+
 }
 
 h1 {
@@ -43,9 +49,9 @@ h1 {
     margin-top: 150px;
 }
 
-.btn-default{
+.btn-default {
     color: black;
-    background-color: cadetblue ;
+    background-color: cadetblue;
 }
 
 .btn-signup,
@@ -97,5 +103,14 @@ h1 {
     color: rgb(222, 146, 168);
 }
 
+footer {
+    background-color: #188181;
+}
 
+.brand {
+    color: #E84610
+}
 
+p{
+    font-weight: 700;
+}

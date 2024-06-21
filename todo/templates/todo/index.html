@@ -26,11 +26,13 @@
 		<div class="card">
 			<center><b>{{i.title}}</b></center>
 			<hr />
-			{{i.date}}
+			Date: {{i.date}}
 			<hr />
-			{{i.details}}
+			Task: {{i.details}}
 			<hr />
-			{{i.author}}
+			Allocated by: {{i.author}}
+			<hr />
+			Allocated to: {{ i.allocated_to.username}}
 			<br />
 			<br />
 			<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
@@ -42,7 +44,7 @@
 		{% endfor%}
 	</div>
 	<div class="col-md-1"></div>
-	<div class="col-md-3">
+	<div class="col-md-4">
 		<div class="submit_form">
 			<form method="POST">
 				{% csrf_token %}
