@@ -50,7 +50,8 @@ h3{
 }
 
 .alert {
-    margin-top: 50px;
+    margin-top: 20px;
+    background-color: #23BBBB;
 }
 
 .btn{
