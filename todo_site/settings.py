@@ -37,18 +37,20 @@ ALLOWED_HOSTS = ['8000-beccallfor1-djangotodol-pdsecuefxqw.ws.codeinstitute-ide.
 # Application definition
 
 INSTALLED_APPS = [
-    'todo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'django_summernote',
+    'cloudinary',
+    'todo',
 ]
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'

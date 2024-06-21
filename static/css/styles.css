@@ -45,20 +45,19 @@ h1 {
     text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
 }
 
-.alert {
-    margin-top: 150px;
+h3{
+    font-weight: 700;
 }
 
-.btn-default {
+.alert {
+    margin-top: 50px;
+}
+
+.btn{
     color: black;
     background-color: cadetblue;
 }
 
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
 
 .btn-signup:hover,
 .btn-signup:active {
@@ -77,38 +76,23 @@ h1 {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
 
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
 
-.btn-like:hover,
-.btn-like:active {
+.btn:hover,
+.btn:active {
     color: #E84610;
     background: transparent;
     border: none;
 }
 
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
-}
 
 footer {
     background-color: #188181;
 }
 
 .brand {
-    color: #E84610
+    color: #E84610;
+    font-weight: 500;
 }
 
 p{
