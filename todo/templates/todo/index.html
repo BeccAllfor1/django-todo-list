@@ -37,8 +37,7 @@
 			<br />
 			<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
 				{% csrf_token %}
-				<button value="remove" type="submit" class="btn btn-primary" style="float: right;"><span
-						class="glyphicon glyphicon-trash"></span> remove</button>
+				<a class="btn btn-primary" style="float: right;" href=" {% url 'remove_item' i.id %}">remove </a>
 			</form>
 		</div>
 		{% endfor%}
