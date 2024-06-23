@@ -1,9 +1,11 @@
+
 .card {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
         0 6px 20px 0 rgba(0, 0, 0, 0.39);
     background: rgb(82, 189, 231);
     margin-bottom: 5%;
+    margin-left: 5px;
     border-radius: 25px;
     padding: 2%;
     overflow: auto;
@@ -12,7 +14,7 @@
 }
 
 .card:hover {
-    background: rgb(172, 4, 146);
+    background: rgb(236, 103, 216);
 }
 
 #id_details {
@@ -22,15 +24,20 @@
     box-sizing: border-box;
 }
 
+#id_title {
+    max-width: 100%;
+}
+
 .submit_form {
 
-
+    min-width: 200px;
     text-align: center;
     padding: 3%;
     background: rgb(36, 132, 170);
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
         0 6px 20px 0 rgba(0, 0, 0, 0.36);
+
 }
 
 h1 {
@@ -41,10 +48,56 @@ h1 {
 
 
 .alert {
-    margin-top: 100px;
+    margin-top: 20px;
+    background-color: #23BBBB;
 }
 
-.confirmation-remove{
-   padding-left: 50px;
+.btn{
+    color: black;
+    background-color: cadetblue;
+}
 
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+
+
+.btn:hover,
+.btn:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+
+footer {
+    background-color: #188181;
+}
+
+.brand {
+    color: #E84610;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 700;
+}
+
+.confirmation-remove {
+    padding-left: 100px;
 }
