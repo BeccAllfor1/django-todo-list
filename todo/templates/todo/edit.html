@@ -4,14 +4,27 @@
 {% block content %}
 
 
-<h2>Edit Task</h2>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
 
-    <a class="btn btn-default" href="{% url 'home'%}">Cancel</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h2>Edit Task</h2>
+            <form class="confirmation-edit" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
 
-    <input type="submit" class="btn confirm-button" value="Confirm">
-</form>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <a class="btn btn-default" href="{% url 'home'%}">Cancel</a>
+
+            <input type="submit" class="btn confirm-button" value="Confirm">
+            </div>
+    </div>    
+    
+</div>
 
 {% endblock %}

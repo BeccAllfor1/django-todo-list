@@ -46,6 +46,11 @@ h1 {
     text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
 }
 
+h2 {
+    text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
+}
+
+
 
 .alert {
     margin-top: 20px;
@@ -79,7 +84,7 @@ h1 {
 
 .btn:hover,
 .btn:active {
-    color: #160b08;
+    color: black;
     background: transparent;
     border: none;
 }
