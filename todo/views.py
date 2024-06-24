@@ -14,14 +14,16 @@ def index(request):
     if request.method == "POST":
         form = TodoForm(request.POST)
         if form.is_valid():
-            todo = form.save(commit=False)
-            todo.author = request.user
-            todo.save()
-            messages.success(request,"Todo Task added successfully!")
-            return redirect('home')
+            if request.user.is_authenticated:
+                todo = form.save(commit=False)
+                todo.author = request.user
+                todo.save()
+                messages.success(request, " Task added successfully!")
+                return redirect('home')
+            else:
+                messages.error(request, "You must be logged in to add a task.")
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
-
+            messages.error(request, "Error updating task!")
     form = TodoForm()
  
     page = {
