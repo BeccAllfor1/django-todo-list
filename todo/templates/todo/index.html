@@ -35,9 +35,13 @@
 			Allocated to: {{ i.allocated_to.username}}
 			<br />
 			<br />
+			<form action="{% url 'edit_item' i.id %}" method="GET" style="padding-right: 4%; padding-bottom: 3%;">
+				{% csrf_token %}
+				<button type="submit" class="btn btn-primary" style="float: right;">Edit</button>
+			</form>
 			<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
 				{% csrf_token %}
-				<a class="btn btn-primary" style="float: right;" href=" {% url 'remove_item' i.id %}">remove </a>
+				<a class="btn btn-primary" style="float: right;" href=" {% url 'remove_item' i.id %}"> Remove </a>
 			</form>
 		</div>
 		{% endfor%}

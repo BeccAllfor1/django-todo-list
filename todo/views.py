@@ -8,7 +8,7 @@ from .forms import TodoForm
 from .models import Todo
 # Create your views here.
 
-@login_required
+
 def index(request):
     item_list = Todo.objects.order_by("-date")
     if request.method == "POST":
@@ -49,3 +49,24 @@ def removeTask(request, item_id):
         messages.error(request, "You do not have permission to delete this Task.")
     
     return redirect('home')
+
+
+@login_required
+def edit_task(request, item_id):
+    item = get_object_or_404(Todo, id=item_id)
+    
+    if request.user != item.author:
+        messages.error(request, "You do not have permission to edit this task.")
+        return redirect('home')
+
+    if request.method == "POST":
+        form = TodoForm(request.POST, instance=item)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Task updated successfully!")
+            return redirect('home')
+    else:
+        form = TodoForm(instance=item)
+
+    context = {'form': form}
+    return render(request, 'todo/edit.html', context)
