@@ -268,7 +268,7 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 
 [Cloudinary](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=492438439811&utm_term=cloudinary&gclid=Cj0KCQiAt8WOBhDbARIsANQLp96hTerzfFJ_P9lX0tEYEdtM3tSsYB6fhw-x3wQxOO0oc4hXm-A2ZBUaAptIEALw_wcB) - Used to store images online for the recipe posts. 
 
-[Summernote](https://summernote.org/) Used to add a text area field to the admin setup to enable a list of ingredients and method steps.
+[Summernote](https://summernote.org/)
 
 [Google Fonts](https://fonts.google.com/https://fonts.google.com/) - provide fonts for the website.
 
@@ -353,18 +353,10 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 
 
 ## Bugs and Issues
-- I had a problem where  wasn't loading. 
-The error was corrected by deleting the unnecessary space after the quotation marks indicating the summernote field
+- I had a problem where my edit button would not function. 
+The error was corrected by moving the cancel and confirm button so it was inside the form.
 
-- Error - my search engine could not search recipes by title. The mistake was in writing _icontain where there should be two __ I listed one _. 
-I fixed the error bu adding another _ to __icontain
-
-- Your_recipes page 404 - I had a problem when I tried to get your_recipes page it displays page 404. After checking that everything is correctly related to the names entered and I still haven't found the bug, I contacted tutor support. The problem was in Chrome, your_recipe page is loading in every other browser. The mistake was in my chrome extensions.
-
-- Pagination was not working. Upon checking the django documents I realised I hadn't coded pagination correctly for Class views. Using the documentation I corrected the mistake.
-
-- User image uploads weren't uploading to Cloudinary. To fix this I added {% load cloudinary %} at the top of the file
-
+- 
 # Deployment
 This project was deployed using Github and Heroku.
 
@@ -383,10 +375,10 @@ To create a new repository I took the following steps:
 
 # Credits
 
-- [Summernote](https://github.com/summernote/django-summernote) - I learn how to change summernote toolbar
-- [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with recipe details page and pagination
-- [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) - also helped me with pagination and other problems
-- [Search bar](https://www.teckiy.com/blog/implementation-of-search-bar-using-django-in-any-website-2936659075/) - this site is used to help me build Search bar
+- [Summernote](https://github.com/summernote/django-summernote) - I learnt how to change summernote toolbar
+- [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with the Nav bar.
+- [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) 
+- [GeeksforGeeks](https://www.geeksforgeeks.org/python-todo-webapp-using-django/)-I used this site to help me get the basics of a todo list
 
 
 

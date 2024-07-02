@@ -6,6 +6,8 @@ from django.contrib import messages
 
 from .forms import TodoForm
 from .models import Todo
+from.forms import RespondForm
+from.models import Todo, Respond
 # Create your views here.
 
 
@@ -72,3 +74,19 @@ def edit_task(request, item_id):
 
     context = {'form': form}
     return render(request, 'todo/edit.html', context)
+
+@login_required
+def respond_to_todo(request, todo_id):
+    todo = get_object_or_404(Todo, pk=todo_id)
+    if request.method == "POST":
+        form = RespondForm(request.POST)
+        if form.is_valid():
+            response = form.save(commit=False)
+            response.todo = todo
+            response.author = request.user
+            response.save()
+            messages.success(request, "Response posted!")
+            return redirect('home')  
+    else:
+        form = RespondForm()
+    return render(request, 'todo/respond.html', {'form': form})

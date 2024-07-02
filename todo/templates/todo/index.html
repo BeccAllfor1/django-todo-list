@@ -35,6 +35,18 @@
 			Allocated to: {{ i.allocated_to.username}}
 			<br />
 			<br />
+			{% for response in i.responses.all %}
+            Response : {{response.response_text}}
+            <hr />
+            Response Date: {{response.date_added}}
+            <hr />
+            Response Author: {{response.author.username}}
+            <hr />
+            {% endfor %}
+			<form action="{% url 'respond' i.id %}" method="GET" style="padding-left: 4%; padding-top: 3%;">
+				{% csrf_token %}
+				<button type="submit" class="btn btn-primary" style="float: left;">Respond</button>
+			</form>
 			<form action="{% url 'edit_item' i.id %}" method="GET" style="padding-right: 4%; padding-bottom: 3%;">
 				{% csrf_token %}
 				<button type="submit" class="btn btn-primary" style="float: right;">Edit</button>
