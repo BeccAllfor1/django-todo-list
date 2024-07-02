@@ -190,9 +190,9 @@ The website is made from one app:
 All wireframes were created used [Balsamiq](https://balsamiq.com/)
 
 Wireframes for each device are linked here:
-- [Desktop](assets/documents/Desktop-wireframes)
-- [Tablet](assets/documents/Tablet-wireframes)
-- [Mobile](assets/documents/Mobile-wireframes)
+- [Desktop](assets/documents/desktop_wireframes/)
+- [Tablet](assets/documents/tablet_wireframes/)
+- [Mobile](assets/documents/mobile_wireframes/)
 
 
 # Database schema
@@ -266,7 +266,7 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 
 [Bootstrap](https://getbootstrap.com/) - Used to quickly add design to my website, Bootstrap focuses on mobile first design meaning this website is responsive across multiple devices ans screen sizes. 
 
-[Cloudinary](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=492438439811&utm_term=cloudinary&gclid=Cj0KCQiAt8WOBhDbARIsANQLp96hTerzfFJ_P9lX0tEYEdtM3tSsYB6fhw-x3wQxOO0oc4hXm-A2ZBUaAptIEALw_wcB) - Used to store images online for the recipe posts. 
+[Cloudinary](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=492438439811&utm_term=cloudinary&gclid=Cj0KCQiAt8WOBhDbARIsANQLp96hTerzfFJ_P9lX0tEYEdtM3tSsYB6fhw-x3wQxOO0oc4hXm-A2ZBUaAptIEALw_wcB) - loaded, but never found a use.
 
 [Summernote](https://summernote.org/)
 
@@ -277,8 +277,6 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 [Balsamiq](https://balsamiq.com/) - was used to create site wireframes.
 
 [Am I Responsive](http://ami.responsivedesign.is/) - to check if the site is responsive on different screen sizes.
-
-[Pixabay](https://pixabay.com/) and [Unsplash](https://unsplash.com/) - were used for all the images
 
 [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - was used to validate HTML
 
