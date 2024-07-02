@@ -13,17 +13,17 @@
                 {% csrf_token %}
                 {{ form.as_p }}
 
+                <div class="row">
+                    <div class="col-md-8 mt-3 offset-md-2">
+                        <a class="btn btn-default" href="{% url 'home'%}">Cancel</a>
+            
+                        <input type="submit" class="btn confirm-button" value="Confirm">
+                        </div>
+                </div>    
             </form>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <a class="btn btn-default" href="{% url 'home'%}">Cancel</a>
-
-            <input type="submit" class="btn confirm-button" value="Confirm">
-            </div>
-    </div>    
     
 </div>
 
