@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-# import todo form and models
+
 from .forms import TodoForm
 from .models import Todo
 # Create your views here.

@@ -59,19 +59,23 @@ This website will offer all of these things whilst also allowing for intuitive n
 ## User Stories 
 
 **Epic: User Registration and Authentication**
-- As a new user I can register an account so that I can access and allocate tasks to the site
-- As a registered user I can log in to my account so that I can update access and delete tasks on the site
-- As a registered user i can be confident unregistered users can not alter or delete my tasks.
+- As a new user I can register an account so that I can access and allocate tasks to   the site
+- As a registered user I can log in to my account so that I can update tasks I have added on the site
+- As a registered user i can be confident unregistered users can not alter or delete m 
+ my tasks.
 
 **Epic: Viewing Tasks**
 - As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks allocated to me
-- As a logged-in User I can view information about tasks so that I can see what needs doing or attending, and act upon those task
+- As a logged-in User I can view information about tasks so that I can see what needs doing or attending, and 
+  act upon those task
 - As a logged-in User I can be confident my tasks are private to myself and known registered users.
 
 **Epic: Task Management**
 - As a logged-in User I can edit tasks I have made so that I can update or amend them
-- As a logged-in User I can delete tasks so that I can remove any completed or no longer relevent tasks that I have posted
-- As a logged-in User I can comment/respond to tasks i have been allocated so that  the author knows what has been completed or why it has not
+- As a logged-in User I can delete tasks so that I can remove any completed or no longer relevent tasks that I 
+  have posted
+- As a logged-in User I can respond to tasks i have been allocated so that  the author knows what has 
+  been completed or why it has not
 
 **Epic: Administrative Features**
 - As a site Admin I can access the dashboard so that I can manage users that are no longer part of the families site
@@ -79,23 +83,26 @@ This website will offer all of these things whilst also allowing for intuitive n
 # Scope 
 
 ## **Features**
--User registration and login to ensure task privacy and personalised experience.
+- User registration and login to ensure task privacy and personalised experience.
 
--Clear easy to read tasks so users know what needs to be done.
+- Clear easy to read tasks so users know what needs to be done.
 
--Clear date and name of who has allocated the task to them so user knows who has given them this task and on what date.
+- Clear date and name of who has allocated the task to them so user knows who has given them this task and on 
+  what date.
 
--Clear details of who its allocated to so the person knows the task is for them.
+- Clear details of who its allocated to so the person knows the task is for them.
 
--Visible button to remove the task so the person who allocated can take it off when its complete.
+- Visible button to remove the task so the person who allocated can take it off when its complete.
 
--Visible button to edit the task in case anything changes or a mistake is made in the details of the task.
+- Visible button to edit the task in case anything changes or a mistake is made in the details of the task.
 
--Visible delete button so the person who allocated the task can delete it, if needed or when complete.
+- Visible delete button so the person who allocated the task can delete it, if needed or when complete.
 
--User login so only registered users can create tasks and allocate them to other registered users, preventing anyone else editing or adding fake tasks.
+- User login so only registered users can create tasks and allocate them to other registered users, preventing 
+  anyone else editing or adding fake tasks.
 
--Response/comment button so allocated user’s can add details of when task was completed or why task has not been completed yet.
+- Response/comment button so allocated user’s can add details of when task was completed or why task has not 
+ been completed yet.
 
 
 ### **Home Page**
@@ -111,7 +118,8 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 *Hero Image:*
 - The hero image welcomes the user with a short message advertising what the website is about
-- The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page
+- The Login / Register button will take users to the login page, if users do not have an account there is a 
+ link to the registration page
 
 <p align="center">
 <img src="INSERT HERO IMAGE HERE" width="100%" height="100%">
@@ -121,7 +129,8 @@ This website will offer all of these things whilst also allowing for intuitive n
 *Our Organiser:*
 - Our Organiser section shows the tasks added so users can quickly see recently entered tasks
 - The Our Organiser section is fully responsive, showing a scrolling list of tasks with a section to add more
-- Users can see a title, date, Task details, allocated by, allocated too and number of buttons to Edit, Delete and Respond.
+- Users can see a title, date, Task details, allocated by, allocated too and number of buttons to Edit, Delete 
+  and Respond.
 - Responses by allocated to user will appear below the task
 
 <p align="center">
@@ -138,7 +147,8 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 
 ### **Login/Register**
-- The Login / Register button takes users to the login page where they can also find a link to the Register page where they can create an account
+- The Login / Register button takes users to the login page where they can also find a link to the Register 
+  page where they can create an account
 <p align="center">
 <img src="INSERT IMAGE HERE" width="100%" height="100%">
 </p>
@@ -160,13 +170,14 @@ This website will offer all of these things whilst also allowing for intuitive n
 </p>
 
 
-### Future Features
+### **Future Features**
  -Task categories and filtering for improved organisation and prioritisation. 
  -To be completed by date to help organise tasks and help prioritisation.
  -Allocated user views to help allocated user organise their own tasks, improving management of those tasks.
+ -Email notification to let users know when they have new tasks or when tasks they have allocated have been completed.
 
-#
-# Structure
+
+### **Structure**
  
 Since our aim is to make this site simple and easy to use for busy families, the structure idea
 for Family Organiser was to keep it simple. Simplicity helps users to quickly and easily navigate and utilise the app in a time saving manner.
@@ -187,14 +198,14 @@ Wireframes for each device are linked here:
 # Database schema
 
 <p align="center">
-<img src="INSERT DB SCHEME HERE" width="900" height="100%">
+<img src="static/images/database.png" width="900" height="100%">
 </p>
 
 ## Models
 ### **Todo Model**
 
 <p align="center">
-<img src="INSERT IMAGE HERE" width="900" height="100%">
+<img src="static/images/Todo_model.png" width="900" height="100%">
 </p>
 
 ### **Response Model**
@@ -203,8 +214,13 @@ Wireframes for each device are linked here:
 <img src="INSERT IMAGE HERE" width="900" height="100%">
 </p>
 
+### **User Flow Chart**
 
-# Surface
+<p align="center">
+<img src="static/images/user_flow.png" width="900" height="100%">
+</p>
+
+## Surface
 
 ## Design 
 
@@ -281,85 +297,63 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 ### **Testing Users Stories form (UX) Section**
 
 **EPIC: User Registration and Authentication**
-1. As a new user I can register an account so that I can access and contribute to the recipe sharing site
+1. As a new user I can register an account so that I can access and allocate tasks to the site
 <p align="center">
 <img src="INSERT IMAGE HERE" width="500" height="300">
 </p>
 
-2. As a registered user I can log in to my account so that I can access personalised features of the site
-<p align="center">
-<img src="INSERT IMAGE HERE" width="500" height="300">
-</p>
-
-3. As a registered user I can reset my password if I forget it so that I can regain access to my account
+2. As a registered user I can log in to my account so that I can update access and delete tasks on the sit
 <p align="center">
 <img src="INSERT IMAGE HERE" width="500" height="300">
 </p>
 
 **EPIC: Viewing and Searching Recipes**
-1. As a logged-in User I can view a list of recipes so that I can browse through available recipes
+1. As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks 
+  allocated to me
 <p align="center">
 <img src="INSERT IMAGE HERE" width="500" height="300">
 </p>
 
-2. As a logged-in User I can view detailed information about a recipe so that I can see the full ingredients and cooking steps
+2. As a logged-in User I can view information about tasks so that I can see what needs doing or attending, and 
+  act upon those task
 <p align="center">
 <img src="INSERT IMAGE HERE" width="300" height="200">
 </p>
 
-3. As a logged-in User I can search for recipes by keyword so that I can find specific recipes quickly
+3. As a logged-in User I can be confident my tasks are private to myself and known registered users.
 <p align="center">
 <img src="INSERT IMAGE HERE" width="300" height="200">
 </p>
 
-**EPIC: Recipe Management**
-1. As a logged-in User I can edit my existing recipes so that I can update or amend them
+**EPIC: Task Management**
+1. As a logged-in User I can delete tasks so that I can remove any completed or no longer relevent tasks that  
+  I have posted
 <p align="center">
 <img src="INSERT IMAGE HERE" width="600" height="100%">
 </p>
 
-2. As a logged-in User I can delete my recipes so that I can remove any unwanted recipes that I have posted
+2. As a logged-in User I can edit tasks I have made so that I can update or amend them
 <p align="center">
 <img src="INSERT IMAGE HERE" width="500" height="100%">
 </p>
 
-3. As a logged-in User I can comment on recipes so that I can share my thoughts or feedback
+3. As a logged-in User I can respond to tasks i have been allocated so that i can update the author 
 <p align="center">
 <img src="INSERT IMAGE HERE" width="600" height="100%">
-</p>
-
-**EPIC: User Profile Management**
-1. As a logged-in User I can view my profile so that I can see my personal information and contributed recipes
-<p align="center">
-<img src="INSERT IMAGE HERE" width="600" height="100%">
-</p>
-
-2. As a logged-in User I can edit my profile information so that I can update my personal details
-<p align="center">
-<img src="INSERT IMAGE HERE" width="600" height="100%">
-</p>
-
-3. As a logged-in User I can delete my account so that I can remove my presence from the site
-<p align="center">
-<img src="INSERT IMAGE HERE" width="1000" height="100%">
 </p>
 
 **EPIC: Administrative Features**
-1. As a site Admin I can access the dashboard so that I can manage users and content on the site
+1. As a site Admin I can access the dashboard so that I can manage/remove users that are no longer part of the families site
 <p align="center">
 <img src="INSERT IMAGE HERE" width="1000" height="100%">
 </p>
 
-2. As a site Admin I can moderate recipes and comments so that I can ensure the site content meets community guidelines
-<p align="center">
-<img src="INSERT IMAGE HERE" width="600" height="100%">
-</p>
 
 This was tested by accessing the Django Admin Panel. By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
 
 
 ## Bugs and Issues
-- I had a problem where summernote field for preparation_steps wasn't loading. 
+- I had a problem where  wasn't loading. 
 The error was corrected by deleting the unnecessary space after the quotation marks indicating the summernote field
 
 - Error - my search engine could not search recipes by title. The mistake was in writing _icontain where there should be two __ I listed one _. 
