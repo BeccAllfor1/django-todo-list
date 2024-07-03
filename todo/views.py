@@ -14,7 +14,7 @@ from.models import Todo, Respond
 def welcome(request):
     return render(request, 'todo/welcome.html')
 
-
+@login_required
 def index(request):
     item_list = Todo.objects.order_by("-date")
     if request.method == "POST":
