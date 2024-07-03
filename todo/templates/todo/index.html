@@ -11,71 +11,70 @@
 </div>
 {% endfor %}
 {% endif %}
-
-<center class="row">
-	<h1><i> OUR ORGANISER</i></h1>
-	<hr />
-</center>
-
-<div class="row">
-
-	<div class="col-md-6">
-
-		{% for i in list %}
-		<div class="card">
-			<center><b>{{i.title}}</b></center>
-			<hr />
-			Date: {{i.date}}
-			<hr />
-			Task: {{i.details}}
-			<hr />
-			Allocated by: {{i.author}}
-			<hr />
-			Allocated to: {{ i.allocated_to.username}}
-			<br />
-			<br />
-			{% for response in i.responses.all %}
-            Response : {{response.response_text}}
-            <hr />
-            Response Date: {{response.date_added}}
-            <hr />
-            Response Author: {{response.author.username}}
-            <hr />
-            {% endfor %}
-			<form action="{% url 'respond' i.id %}" method="GET" style="padding-left: 4%; padding-top: 3%;">
-				{% csrf_token %}
-				<button type="submit" class="btn btn-primary" style="float: left;">Respond</button>
-			</form>
-			<form action="{% url 'edit_item' i.id %}" method="GET" style="padding-right: 4%; padding-bottom: 3%;">
-				{% csrf_token %}
-				<button type="submit" class="btn btn-primary" style="float: right;">Edit</button>
-			</form>
-			<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
-				{% csrf_token %}
-				<a class="btn btn-primary" style="float: right;" href=" {% url 'remove_item' i.id %}"> Remove </a>
-			</form>
-		</div>
-		{% endfor%}
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="flex-center"><i> OUR ORGANISER</i></h1>
+		<hr />
 	</div>
-	<div class="col-md-1"></div>
-	<div class="col-md-4">
-		<div class="submit_form">
-			<form method="POST">
-				{% csrf_token %}
-				{% for field in forms %}
-				<div class="form-group">
-					<label for="{{ field.id_for_label }}" class="form-label">{{ field.label_tag }}</label>
-					{{ field }}
-				</div>
+
+	<div class="row">
+
+		<div class="col-md-6">
+
+			{% for i in list %}
+			<div class="card">
+				<h4 class="flex-center"><b>{{i.title}}</b></h4>
+				<hr />
+				Date: {{i.date}}
+				<hr />
+				Task: {{i.details}}
+				<hr />
+				Allocated by: {{i.author}}
+				<hr />
+				Allocated to: {{ i.allocated_to.username}}
+				<hr />
+				<hr />
+				{% for response in i.responses.all %}
+				<p style="font-weight: bold; color:rgb(54, 17, 25)"> Response : {{response.response_text}} </p>
+				<hr />
+				<p style="font-weight: bold; color:rgb(54, 17, 25)"> Date: {{response.date_added}} </p>
+				<p style="font-weight: bold; color:rgb(54, 17, 25)"> Author: {{response.author.username}} </p>
+				<hr />
 				{% endfor %}
-				<center>
-					<input type="submit" class="btn btn-default" value="submit" />
-				</center>
-			</form>
+				<form action="{% url 'respond' i.id %}" method="GET" style="padding-left: 4%; padding-top: 3%;">
+					{% csrf_token %}
+					<button type="submit" class="btn btn-primary" style="float: left;">Respond</button>
+				</form>
+				<form action="{% url 'edit_item' i.id %}" method="GET" style="padding-right: 4%; padding-bottom: 3%;">
+					{% csrf_token %}
+					<button type="submit" class="btn btn-primary" style="float: right;">Edit</button>
+				</form>
+				<form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
+					{% csrf_token %}
+					<a class="btn btn-primary" style="float: right;" href=" {% url 'remove_item' i.id %}"> Remove </a>
+				</form>
+			</div>
+			{% endfor%}
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-4">
+			<div class="submit_form">
+				<form method="POST">
+					{% csrf_token %}
+					{% for field in forms %}
+					<div class="form-group">
+						<label for="{{ field.id_for_label }}" class="form-label">{{ field.label_tag }}</label>
+						{{ field }}
+					</div>
+					{% endfor %}
+					<center>
+						<input type="submit" class="btn btn-default" value="submit" />
+					</center>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
-
 {% endblock %}
 {% block copyright %}
 Copyright 2024 Rebecca Allford

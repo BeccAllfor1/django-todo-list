@@ -81,9 +81,16 @@ This website will offer all of these things whilst also allowing for intuitive n
 - As a site Admin I can access the dashboard so that I can manage users that are no longer part of the families site
 
 # Scope 
+- The Family Organiser MVP aims to deliver essential features to help busy families manage their tasks and activities effectively.
+  The initial version focuses on providing a streamlined and functional task management system with the following core features:
+
+
 
 ## **Features**
-- User registration and login to ensure task privacy and personalised experience.
+- User registration to allow users to create a new account with a username, email, and password.
+
+- User login so only registered users can create tasks and allocate them to other registered users, preventing 
+  anyone else editing or adding fake tasks.
 
 - Clear easy to read tasks so users know what needs to be done.
 
@@ -92,18 +99,33 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 - Clear details of who its allocated to so the person knows the task is for them.
 
-- Visible button to remove the task so the person who allocated can take it off when its complete.
+- Visible button to remove the task so the author can delete tasks that are no longer needed or have been completed.
 
-- Visible button to edit the task in case anything changes or a mistake is made in the details of the task.
+- Visible button to edit the task so user can update existing tasks to reflect changes or corrections.
 
-- Visible delete button so the person who allocated the task can delete it, if needed or when complete.
+- Respond button so allocated user’s can add details of when task was completed or why task has not 
+  been completed yet.
 
-- User login so only registered users can create tasks and allocate them to other registered users, preventing 
-  anyone else editing or adding fake tasks.
+- Display a list of all tasks in a user-friendly and organised manner.
 
-- Response/comment button so allocated user’s can add details of when task was completed or why task has not 
- been completed yet.
+- Show task details including title, description, due date, and assigned member.
 
+- Filter tasks by date added.
+
+- Allow users to comment on tasks to provide updates, feedback, or responses.
+
+- Ensure the application is fully responsive and accessible on various devices (desktop, tablet, and mobile).
+
+- Notifications to inform user when actions have been successful or unsuccessful.
+
+## **Non-MVP Features**
+- The following features are considered out of scope for the initial sprint of the MVP but may be implemented in future versions:
+
+- Email notification on creating a task to inform allocated family member of task.
+
+- Adding due dates for specific tasks to assist with organisation.
+
+- Search functionality for improved viewing of tasks.
 
 ### **Home Page**
 *Navigation bar:* 
@@ -118,8 +140,8 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 *Hero Image:*
 - The hero image welcomes the user with a short message advertising what the website is about
-- The Login / Register button will take users to the login page, if users do not have an account there is a 
- link to the registration page
+- The Sign In / Sign Up button will take users to the login page, if users do not have an account there is a 
+  link to the Sign up page
 
 <p align="center">
 <img src="INSERT HERO IMAGE HERE" width="100%" height="100%">
@@ -129,9 +151,9 @@ This website will offer all of these things whilst also allowing for intuitive n
 *Our Organiser:*
 - Our Organiser section shows the tasks added so users can quickly see recently entered tasks
 - The Our Organiser section is fully responsive, showing a scrolling list of tasks with a section to add more
-- Users can see a title, date, Task details, allocated by, allocated too and number of buttons to Edit, Delete 
+- Users can see a title, date, Task details, allocated by, allocated to and number of buttons to Edit, Delete 
   and Respond.
-- Responses by allocated to user will appear below the task
+- Responses by author will appear below the task
 
 <p align="center">
 <img src="INSERT IMAGE HERE" width="100%" height="100%">
@@ -140,9 +162,9 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 *Footer:*
 - Appears on every page snd contains social links
-- Links are opened in a new tab to avoid dragging users from our site
+
 <p align="center">
-<img src="INSERT IMAGE HERE" width="100%" height="100%">
+<img src="static/images/footer.png" width="100%" height="100%">
 </p>
 
 
@@ -208,11 +230,12 @@ Wireframes for each device are linked here:
 <img src="static/images/Todo_model.png" width="900" height="100%">
 </p>
 
-### **Response Model**
+### **Respond Model**
 
 <p align="center">
-<img src="INSERT IMAGE HERE" width="900" height="100%">
+<img src="static/images/respond_model.png" width="900" height="100%">
 </p>
+
 
 ### **User Flow Chart**
 
@@ -239,7 +262,7 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 
 
 ## Font 
-- Mulish, sans-serif - main font
+- Monserat, sans-serif - main font
 - Patric Hand- for navbar logo and welcome message
 
 
@@ -266,7 +289,7 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 
 [Bootstrap](https://getbootstrap.com/) - Used to quickly add design to my website, Bootstrap focuses on mobile first design meaning this website is responsive across multiple devices ans screen sizes. 
 
-[Cloudinary](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=492438439811&utm_term=cloudinary&gclid=Cj0KCQiAt8WOBhDbARIsANQLp96hTerzfFJ_P9lX0tEYEdtM3tSsYB6fhw-x3wQxOO0oc4hXm-A2ZBUaAptIEALw_wcB) - loaded, but never found a use.
+[Cloudinary](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=492438439811&utm_term=cloudinary&gclid=Cj0KCQiAt8WOBhDbARIsANQLp96hTerzfFJ_P9lX0tEYEdtM3tSsYB6fhw-x3wQxOO0oc4hXm-A2ZBUaAptIEALw_wcB) - loaded for future feature use.
 
 [Summernote](https://summernote.org/)
 
@@ -286,6 +309,7 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 
 [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daaf3-a9bedb) - to make color palette
 
+[Allauth](https://docs.allauth.org/en/latest/) - for authentication and registration
 
 # Testing
 
@@ -300,7 +324,7 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 <img src="INSERT IMAGE HERE" width="500" height="300">
 </p>
 
-2. As a registered user I can log in to my account so that I can update access and delete tasks on the sit
+2. As a registered user I can log in to my account so that I can update access and delete tasks on the site
 <p align="center">
 <img src="INSERT IMAGE HERE" width="500" height="300">
 </p>
@@ -354,7 +378,9 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 - I had a problem where my edit button would not function. 
 The error was corrected by moving the cancel and confirm button so it was inside the form.
 
-- 
+- I had a bottom scroll appear on my organiser page so solved this by adding a container-fluid.
+
+-My styling was not applying to the h1 in index.html, i discovered this was due to the center tag, so i removed this and used css instead.
 # Deployment
 This project was deployed using Github and Heroku.
 
@@ -385,4 +411,4 @@ To create a new repository I took the following steps:
 
 
 ## Acknowledgements
-- Thanks to Code Institute and facilitator
+- Thanks to Code Institute and facilitator and coding coaches.

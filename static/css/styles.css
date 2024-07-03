@@ -1,3 +1,4 @@
+
 .card {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
@@ -43,10 +44,21 @@ h1 {
     margin-top: 150px;
     font-weight: 700;
     text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
+    font-family: 'Monserat', sans-serif;
+    
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
 }
 
-h3, h2 {
+h3,
+h2 {
     text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
+    font-family: 'Monserat', sans-serif;
+}
+h4 {
+    font-family: 'Monserat', sans-serif;
 }
 
 .alert {
@@ -54,9 +66,10 @@ h3, h2 {
     background-color: #23BBBB;
 }
 
-.btn{
+.btn {
     color: black;
     background-color: cadetblue;
+    font-family: 'Monserat', sans-serif;
 }
 
 
@@ -92,7 +105,7 @@ footer {
 }
 
 .brand {
-    color: #E84610;
+    color: #e81010;
     font-weight: 500;
 }
 
