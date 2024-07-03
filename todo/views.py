@@ -48,7 +48,7 @@ def removeTask(request, item_id):
     if request.user == item.author:
         if request.method == "POST":
             Todo.objects.filter(id=item_id).delete()
-            return redirect('home')
+            return redirect('organiser')
         context = {}
         return render(request, 'todo/remove.html', context)
         
@@ -56,7 +56,7 @@ def removeTask(request, item_id):
     else:
         messages.error(request, "You do not have permission to delete this Task.")
     
-    return redirect('home')
+    return redirect('organiser')
 
 
 @login_required
@@ -65,14 +65,14 @@ def edit_task(request, item_id):
     
     if request.user != item.author:
         messages.error(request, "You do not have permission to edit this task.")
-        return redirect('home')
+        return redirect('organiser')
 
     if request.method == "POST":
         form = TodoForm(request.POST, instance=item)
         if form.is_valid():
             form.save()
             messages.success(request, "Task updated successfully!")
-            return redirect('home')
+            return redirect('organiser')
     else:
         form = TodoForm(instance=item)
 
@@ -90,7 +90,7 @@ def respond_to_todo(request, todo_id):
             response.author = request.user
             response.save()
             messages.success(request, "Response posted!")
-            return redirect('home')  
+            return redirect('organiser')  
     else:
         form = RespondForm()
     return render(request, 'todo/respond.html', {'form': form})

@@ -22,11 +22,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="home"),
-    ####################give id no. item_id name or item_id=i.id ############
-    # pass item_id as primary key to remove that the todo with given id
-    # path('del/<str:item_id>', views.remove, name="del"),
-    ########################################################################
     path('', include('todo.urls')),
     path('summernote/', include('django_summernote.urls')),
     path("accounts/", include("allauth.urls")),
