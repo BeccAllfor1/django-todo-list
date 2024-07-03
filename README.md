@@ -248,16 +248,15 @@ Wireframes for each device are linked here:
 ## Design 
 
 ## Chosen Color 
-Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daaf3-a9bedb)
 <p align="center">
 <img src="INSERT IMAGE HERE" width="800" height="300">
 </p>
 
-- **#BBBBBB** - navbar background color. It fits nicely with the hero image.
-- **#FFC107** - buttons color. I choose this color because it matches nicely with the rest of the page and it elevates the look of the page
-- **#F9F9F9** - body site color. Fits nicely with the rest of the page. I choose this color because normal white color is to bright
-- **#F1E3CF**- background color for login/register forms. I choose this color because it fits nicely with side image
-- **#484747** - footer background color
+- **#BBBBBB** - navbar background colour fits in with the minimalist feel of the site.
+- **#FFC107** - buttons colour. I choose this color because it matches nicely with footer .
+- **#F9F9F9** - body site colour. Fits nicely with the rest of the page. I choose to keep this plain as it does distract from the content.
+- **#F1E3CF**- background colour for Sign Up/Sign In forms. I choose this colour again as it keeps the focus on the form.
+- **#484747** - footer background color, adds colour without removing focus.
 
 
 
@@ -306,8 +305,6 @@ Color palette from [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daa
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - was used to validate CSS
 
 [Beautify](https://www.jpkc.com/tools/beautify/) - was used to correct indentation issues and get rid of too much whitespace - HTML, CSS
-
-[Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daaf3-a9bedb) - to make color palette
 
 [Allauth](https://docs.allauth.org/en/latest/) - for authentication and registration
 
