@@ -10,7 +10,7 @@
     <form class="confirmation-remove" method="POST">
         {% csrf_token %}
         <h2>Are you sure you wish to remove this task?</h2>
-        <a  class="btn btn-default" href="{% url 'home'%}">Cancel</a>
+        <a  class="btn btn-default" href="{% url 'organiser'%}">Cancel</a>
         
         <input type="submit" class="btn confirm-button" value="Confirm">
     </form>

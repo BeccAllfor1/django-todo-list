@@ -164,7 +164,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Appears on every page snd contains social links
 
 <p align="center">
-<img src="static/images/footer.png" width="100%" height="100%">
+<img src="todo/static/images/footer.png" width="100%" height="100%">
 </p>
 
 

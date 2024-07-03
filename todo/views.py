@@ -3,12 +3,16 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-
+from django.shortcuts import render
 from .forms import TodoForm
 from .models import Todo
 from.forms import RespondForm
 from.models import Todo, Respond
 # Create your views here.
+
+
+def welcome(request):
+    return render(request, 'todo/welcome.html')
 
 
 def index(request):
@@ -21,7 +25,7 @@ def index(request):
                 todo.author = request.user
                 todo.save()
                 messages.success(request, " Task added successfully!")
-                return redirect('home')
+                return redirect('organiser')
             else:
                 messages.error(request, "You must be logged in to add a task.")
         else:
