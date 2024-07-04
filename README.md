@@ -43,7 +43,8 @@ The target audience for 'Family Organiser' are:
 
 - Families in todays society have very busy lives
 - Anyone looking for an easy to use management system
-- Parents who work long hours or who struggle due to shift work to have regular conversations about social events or childrens activities and need a tool to keep each other updated.
+- Parents who work long hours or who struggle due to shift work to have regular conversations about social events or childrens activities and need a tool to keep each other 
+ updated.
 
 
 These users will be looking for:
@@ -134,7 +135,11 @@ This website will offer all of these things whilst also allowing for intuitive n
 - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
 
 <p align="center">
-<img src="INSERT NAVIGATION BAR FEATURES IMAGE HERE" width="100%" height="100%">
+<img src="static/images/navbar_full.png" width="100%" height="100%">
+</p>
+
+<p align="center">
+<img src="static/images/navbar_drop.png" width="100%" height="100%">
 </p>
 
 
