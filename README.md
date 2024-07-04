@@ -130,7 +130,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 ### **Home Page**
 *Navigation bar:* 
 - The navigation bar appears on every page so users can easily navigate through the site
-- Navigation bar has links for 'Home', 'Tasks' and 'Login/Register'.
+- Navigation bar has links for 'Home', 'Our Organiser' and 'Sign Up''Sign In'.
 - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
 
 <p align="center">
@@ -156,7 +156,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Responses by author will appear below the task
 
 <p align="center">
-<img src="INSERT IMAGE HERE" width="100%" height="100%">
+<img src="static/images/our_organiser.png" width="100%" height="100%">
 </p>
 
 
@@ -164,31 +164,29 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Appears on every page snd contains social links
 
 <p align="center">
-<img src="todo/static/images/footer.png" width="100%" height="100%">
+<img src="static/images/footer.png" width="100%" height="100%">
 </p>
 
 
-### **Login/Register**
-- The Login / Register button takes users to the login page where they can also find a link to the Register 
+### **Sign Up/sign In**
+- The Sign Up / In button takes users to the Sign up page where they can also find a link to the Sign In 
   page where they can create an account
 <p align="center">
-<img src="INSERT IMAGE HERE" width="100%" height="100%">
+<img src="static/images/sign_up.png" width="100%" height="100%">
 </p>
 
 <p align="center">
-<img src="INSERT IMAGE HERE" width="100%" height="100%">
+<img src="static/images/sign_in.png" width="100%" height="100%">
 </p>
 
 
 ### **Response page**
-- The main body of the page contains a response form, with a section for title, a shortdescription for the response and a date.
-- only a logged in user who task is allocated to can leave a response.
+- The main body of the page contains a response form, with a section for title, a short description and a date, 
+  the reponse author populates automatically according to who 
+  is signed in.
+- only a logged in user can leave a response.
 <p align="center">
-<img src="INSERT IMAGE HERE" width="100%" height="100%">
-</p>
-
-<p align="center">
-<img src="INSERT IMAGE HERE" width="100%" height="100%">
+<img src="static/images/reponse_to_task.png" width="100%" height="100%">
 </p>
 
 
@@ -249,20 +247,25 @@ Wireframes for each device are linked here:
 
 ## Chosen Color 
 <p align="center">
-<img src="INSERT IMAGE HERE" width="800" height="300">
+ - All colours were based around Keppel
+<img src="static/images/color.png" width="800" height="300">
 </p>
 
-- **#BBBBBB** - navbar background colour fits in with the minimalist feel of the site.
-- **#FFC107** - buttons colour. I choose this color because it matches nicely with footer .
-- **#F9F9F9** - body site colour. Fits nicely with the rest of the page. I choose to keep this plain as it does distract from the content.
-- **#F1E3CF**- background colour for Sign Up/Sign In forms. I choose this colour again as it keeps the focus on the form.
-- **#484747** - footer background color, adds colour without removing focus.
+- **white** - navbar background colour fits in with the minimalist feel of the site.
+- **#ac9141** - buttons colour. I choose this color because it contrasts and stands out nicely with footer .
+- **white** - body site colour. Fits nicely with the rest of the page. I choose to keep this plain as it does distract from the content.
+- **white** - background colour for Sign Up/Sign In forms. I choose this colour again as it keeps the focus on the form.
+- **#419c91** - footer background color, adds colour without removing focus.
+- **#9c415c** - Alert colour to stand out and grab users attention.
+- **#419c91** - Task input form to stand out and contrast with the footer
+- **419c91** - Task forms to contrast with the input box but match with the footer.
+- **#df8fa7** - Tasks change to this colour when hovered over to indicate they are selected, it matches the scheme but stands out.
 
 
 
 ## Font 
 - Monserat, sans-serif - main font
-- Patric Hand- for navbar logo and welcome message
+
 
 
 # Technologies Used
@@ -326,7 +329,7 @@ Wireframes for each device are linked here:
 <img src="INSERT IMAGE HERE" width="500" height="300">
 </p>
 
-**EPIC: Viewing and Searching Recipes**
+**EPIC: Viewing Tasks and Responses**
 1. As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks 
   allocated to me
 <p align="center">
@@ -373,11 +376,12 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 
 ## Bugs and Issues
 - I had a problem where my edit button would not function. 
-The error was corrected by moving the cancel and confirm button so it was inside the form.
+  The error was corrected by moving the cancel and confirm button so it was inside the form.
 
 - I had a bottom scroll appear on my organiser page so solved this by adding a container-fluid.
 
--My styling was not applying to the h1 in index.html, i discovered this was due to the center tag, so i removed this and used css instead.
+- My styling was not applying to the h1 in index.html, i discovered this was due to the center tag, so i removed this and used css instead.
+
 # Deployment
 This project was deployed using Github and Heroku.
 
@@ -398,13 +402,13 @@ To create a new repository I took the following steps:
 
 - [Summernote](https://github.com/summernote/django-summernote) - I learnt how to change summernote toolbar
 - [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with the Nav bar.
-- [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) 
+- [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) -Used as a source of information to check staic set up
 - [GeeksforGeeks](https://www.geeksforgeeks.org/python-todo-webapp-using-django/)-I used this site to help me get the basics of a todo list
 
 
 
 ## Media
-- All images were taken from[Pixabay](https://pixabay.com/) and [Unsplash](https://unsplash.com/)
+- All image taken from[Pexels](https://www.pexels.com/@panditwiguna/)
 
 
 ## Acknowledgements
