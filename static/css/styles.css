@@ -70,6 +70,7 @@ h4 {
     color: black;
     background-color: cadetblue;
     font-family: 'Monserat', sans-serif;
+    border-bottom: 5px;
 }
 
 
@@ -116,3 +117,4 @@ p {
 .confirmation-remove {
     padding-left: 100px;
 }
+
