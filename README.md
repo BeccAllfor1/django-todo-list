@@ -1,7 +1,7 @@
 <h1 align="center">Family Organiser</h1>
 
 <p align="center">
-<img src="INSERT RESPONSIVE WEBSITE IMAGE HERE" width="600" height="100%">
+<img src="static/images/responsive.png" width="600" height="100%">
 </p>
 
 This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to post tasks, comment/respond to tasks allocated to them and have an organised easy to read and understand management system to refer to. This project has been built for the purpose of helping busy families who are looking for a task management solution, to ease their day to day lives, and assit in freeing up time to spend with their families.
