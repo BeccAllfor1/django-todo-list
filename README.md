@@ -361,18 +361,21 @@ Wireframes for each device are linked here:
 
 2. As a logged-in User I can edit tasks I have made so that I can update or amend them
 <p align="center">
-<img src="INSERT IMAGE HERE" width="500" height="100%">
+<img src="static/images/update_success.png" width="500" height="100%">
+</p>
+<p align="center">
+<img src="static/images/Edit_refused.png" width="500" height="100%">
 </p>
 
 3. As a logged-in User I can respond to tasks i have been allocated so that i can update the author 
 <p align="center">
-<img src="INSERT IMAGE HERE" width="600" height="100%">
+<img src="static/images/respond_to.png" width="600" height="100%">
 </p>
 
 **EPIC: Administrative Features**
 1. As a site Admin I can access the dashboard so that I can manage/remove users that are no longer part of the families site
 <p align="center">
-<img src="INSERT IMAGE HERE" width="1000" height="100%">
+<img src="static/images/admin_access.png" width="1000" height="100%">
 </p>
 
 
@@ -383,9 +386,13 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 - I had a problem where my edit button would not function. 
   The error was corrected by moving the cancel and confirm button so it was inside the form.
 
-- I had a bottom scroll appear on my organiser page so solved this by adding a container-fluid.
+- I had a bottom scroll appear on my organiser page so solved this by adding 
+ a container-fluid.
 
-- My styling was not applying to the h1 in index.html, i discovered this was due to the center tag, so i removed this and used css instead.
+- My styling was not applying to the h1 in index.html, i discovered this was 
+ due to the center tag, so i removed this and used css instead.
+
+- Had an issue with the submit button, there had been a center element used  which is now obsolete, fixed it by using css.
 
 # Deployment
 This project was deployed using Github and Heroku.
