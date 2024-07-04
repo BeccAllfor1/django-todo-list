@@ -1,8 +1,9 @@
+
 .card {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
         0 6px 20px 0 rgba(0, 0, 0, 0.39);
-    background: rgb(82, 189, 231);
+    background: #419c91;
     margin-bottom: 5%;
     margin-left: 5px;
     border-radius: 25px;
@@ -13,7 +14,7 @@
 }
 
 .card:hover {
-    background: rgb(236, 103, 216);
+    background: #df8fa7;
 }
 
 #id_details {
@@ -32,7 +33,7 @@
     min-width: 200px;
     text-align: center;
     padding: 3%;
-    background: rgb(36, 132, 170);
+    background: #9c415c;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
         0 6px 20px 0 rgba(0, 0, 0, 0.36);
@@ -44,32 +45,33 @@ h1 {
     font-weight: 700;
     text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
     font-family: 'Monserat', sans-serif;
-}
-
-h3, h2 {
-    text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
-    font-family: 'Monserat', sans-serif;
-}
     
-
-h4{
-    font-family: 'Monserat', sans-serif;
 }
-
-
 .flex-center {
     display: flex;
     justify-content: center;
 }
 
-.alert {
-    margin-top: 20px;
-    background-color: #23BBBB;
+h3,
+h2 {
+    text-shadow: 10px 10px 15px rgb(36, 132, 170, 20);
+    font-family: 'Monserat', sans-serif;
+}
+h4 {
+    font-family: 'Monserat', sans-serif;
 }
 
-.btn{
+.alert {
+    margin-top: 20px;
+    background-color: #9c415c;
     color: black;
-    background-color: cadetblue;
+}
+
+.btn {
+    color: black;
+    background-color: #ac9141;
+    font-family: 'Monserat', sans-serif;
+    border-bottom: 5px;
 }
 
 
@@ -101,11 +103,11 @@ h4{
 
 
 footer {
-    background-color: #188181;
+    background-color: #419c91;
 }
 
 .brand {
-    color: #E84610;
+    color: #e81010;
     font-weight: 500;
 }
 
@@ -115,4 +117,8 @@ p {
 
 .confirmation-remove {
     padding-left: 100px;
+}
+.moto {
+    padding-right:30px;
+    margin-top:60px;
 }
