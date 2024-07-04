@@ -4,12 +4,12 @@
 <img src="static/images/responsive.png" width="600" height="100%">
 </p>
 
-This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to post tasks, comment/respond to tasks allocated to them and have an organised easy to read and understand management system to refer to. This project has been built for the purpose of helping busy families who are looking for a task management solution, to ease their day to day lives, and assit in freeing up time to spend with their families.
+This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to post tasks, comment/respond to tasks allocated to them and have an organised easy to read and understand, management system to refer to. This project has been built for the purpose of helping busy families who are looking for a task management solution, to ease their day to day lives, and assist in freeing up time to spend with their families.
 
 # About
-Family Organiser is a application where users can allocate tasks and access an organised and easy to use task management system. Many families in todays society have very busy lives, both parents may work, children have after school clubs, hobbies and social events. Its a struggle to stay organised, events, parties or clubs can be missed causing stress and arguments. The family organiser app keeps a record of not only what tasks need to be done but also who is responsible for carrying out the task, this eliminates confusion, keeping a track of who is doing what and when. Freeing up time to enjoy other activities and removing stress and arguments .
+Family Organiser is a application where users can allocate tasks and access an organised and easy to use task management system. Many families in todays society have very busy lives, both parents may work, children have after school clubs, hobbies and social events. Its a struggle to stay organised, events, parties, or clubs can be missed causing stress and arguments. The family organiser app keeps a record of not only what tasks need to be done but also who is responsible for carrying out the task, this eliminates confusion, keeping a track of who is doing what and when. Freeing up time to enjoy other activities and removing stress and arguments .
 
-This page is primarily targeted at busy families who are looking for a task management solution, to ease their day to day lives, but can be utilised by anyone and everyone who are looking for an easy to use task management solution.
+This page is primarily targeted at busy families who are looking for a task management solution, to ease their day to day lives, but can be used by anyone who is looking for an easy use task management solution.
 
 # Table of Contents 
 1. [UX](#ux)
@@ -60,10 +60,10 @@ This website will offer all of these things whilst also allowing for intuitive n
 ## User Stories 
 
 **Epic: User Registration and Authentication**
-- As a new user I can register an account so that I can access and allocate tasks to   the site
+- As a new user I can register an account so that I can access and allocate tasks to the site
 - As a registered user I can log in to my account so that I can update tasks I have added on the site
-- As a registered user i can be confident unregistered users can not alter or delete m 
- my tasks.
+- As a registered user I can be confident unregistered users can not alter or delete 
+  my tasks.
 
 **Epic: Viewing Tasks**
 - As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks allocated to me
@@ -75,7 +75,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - As a logged-in User I can edit tasks I have made so that I can update or amend them
 - As a logged-in User I can delete tasks so that I can remove any completed or no longer relevent tasks that I 
   have posted
-- As a logged-in User I can respond to tasks i have been allocated so that  the author knows what has 
+- As a logged-in User I can respond to tasks i have been allocated so that the author knows what has 
   been completed or why it has not
 
 **Epic: Administrative Features**
@@ -109,9 +109,9 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 - Display a list of all tasks in a user-friendly and organised manner.
 
-- Show task details including title, description, due date, and assigned member.
+- Show task details including title, description, date added, and assigned member.
 
-- Filter tasks by date added.
+- Order tasks by date added.
 
 - Allow users to comment on tasks to provide updates, feedback, or responses.
 
@@ -149,14 +149,14 @@ This website will offer all of these things whilst also allowing for intuitive n
   link to the Sign up page
 
 <p align="center">
-<img src="INSERT HERO IMAGE HERE" width="100%" height="100%">
+<img src="static/images/home_page.png" width="100%" height="100%">
 </p>
 
 
 *Our Organiser:*
 - Our Organiser section shows the tasks added so users can quickly see recently entered tasks
 - The Our Organiser section is fully responsive, showing a scrolling list of tasks with a section to add more
-- Users can see a title, date, Task details, allocated by, allocated to and number of buttons to Edit, Delete 
+- Users can see a title, date, task details, allocated by, allocated to and number of buttons to Edit, Remove 
   and Respond.
 - Responses by author will appear below the task
 
@@ -208,7 +208,7 @@ Since our aim is to make this site simple and easy to use for busy families, the
 for Family Organiser was to keep it simple. Simplicity helps users to quickly and easily navigate and utilise the app in a time saving manner.
 
 The website is made from one app:
-- Todo
+- todo
 
 
 # Wireframes
