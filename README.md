@@ -230,7 +230,7 @@ Wireframes for each device are linked here:
 ### **Todo Model**
 
 <p align="center">
-<img src="static/images/Todo_model.png" width="900" height="100%">
+<img src="static/images/todo_model.png" width="900" height="100%">
 </p>
 
 ### **Respond Model**
