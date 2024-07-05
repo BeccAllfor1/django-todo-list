@@ -12,10 +12,22 @@ from.models import Todo, Respond
 
 
 def welcome(request):
+    """
+    Render the welcome page.
+
+    Returns the rendered 'welcome.html' template.
+    """
     return render(request, 'todo/welcome.html')
+
 
 @login_required
 def index(request):
+    """
+    Handle the display and submission of the TODO list.
+
+    Retrieves and displays a list of TODO items. Handles the submission of a new TODO item,
+    ensuring the user is authenticated and form data is valid.
+    """
     item_list = Todo.objects.order_by("-date")
     if request.method == "POST":
         form = TodoForm(request.POST)
@@ -42,6 +54,8 @@ def index(request):
    
 @login_required
 def removeTask(request, item_id):
+
+    """Remove a task if the logged-in user is the author."""
     
     item = get_object_or_404(Todo, id=item_id)
     
@@ -61,6 +75,9 @@ def removeTask(request, item_id):
 
 @login_required
 def edit_task(request, item_id):
+
+    """Edit a task if the logged-in user is the author."""
+
     item = get_object_or_404(Todo, id=item_id)
     
     if request.user != item.author:
@@ -81,6 +98,15 @@ def edit_task(request, item_id):
 
 @login_required
 def respond_to_todo(request, todo_id):
+    """
+        Allows a logged-in user to respond to a specific Todo task.
+
+        Handles POST requests to save responses using 'RespondForm'.
+        Renders 'todo/respond.html' template with form to submit responses.
+
+        Redirects to 'organiser' on successful form submission.
+    """
+
     todo = get_object_or_404(Todo, pk=todo_id)
     if request.method == "POST":
         form = RespondForm(request.POST)

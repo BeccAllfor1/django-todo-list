@@ -326,37 +326,33 @@ Wireframes for each device are linked here:
 **EPIC: User Registration and Authentication**
 1. As a new user I can register an account so that I can access and allocate tasks to the site
 <p align="center">
-<img src="INSERT IMAGE HERE" width="500" height="300">
+<img src="static/images/sign_in.png" width="500" height="300">
 </p>
 
 2. As a registered user I can log in to my account so that I can update access and delete tasks on the site
 <p align="center">
-<img src="INSERT IMAGE HERE" width="500" height="300">
+<img src="static/images/sign_in.png" width="500" height="300">
 </p>
 
 **EPIC: Viewing Tasks and Responses**
 1. As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks 
   allocated to me
 <p align="center">
-<img src="INSERT IMAGE HERE" width="500" height="300">
+<img src="" width="500" height="300">
 </p>
 
 2. As a logged-in User I can view information about tasks so that I can see what needs doing or attending, and 
   act upon those task
 <p align="center">
-<img src="INSERT IMAGE HERE" width="300" height="200">
+<img src="static/images/our_organiser.png" width="300" height="200">
 </p>
 
-3. As a logged-in User I can be confident my tasks are private to myself and known registered users.
-<p align="center">
-<img src="INSERT IMAGE HERE" width="300" height="200">
-</p>
 
 **EPIC: Task Management**
 1. As a logged-in User I can delete tasks so that I can remove any completed or no longer relevent tasks that  
   I have posted
 <p align="center">
-<img src="INSERT IMAGE HERE" width="600" height="100%">
+<img src="static/images/confirm_remove.png" width="600" height="100%">
 </p>
 
 2. As a logged-in User I can edit tasks I have made so that I can update or amend them
