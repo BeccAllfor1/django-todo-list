@@ -26,10 +26,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False 
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-beccallfor1-djangotodol-pdsecuefxqw.ws.codeinstitute-ide.net', 
-'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-beccallfor1-djangotodol-pdsecuefxqw.ws.codeinstitute-ide.net',  # noqa
+                 '.herokuapp.com']
 
 
 # Application definition
@@ -79,7 +79,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                
+
             ],
         },
     },
@@ -91,20 +91,20 @@ WSGI_APPLICATION = 'todo_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #   'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.8000-beccallfor1-djangotodol-pdsecuefxqw.ws.codeinstitute-ide.net",
-    "https://*.herokuapp.com"
+ "https://*.8000-beccallfor1-djangotodol-pdsecuefxqw.ws.codeinstitute-ide.net",
+ "https://*.herokuapp.com"
 ]
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
@@ -113,16 +113,18 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+     'NAME':
+     'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+     'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+     'NAME':
+     'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 

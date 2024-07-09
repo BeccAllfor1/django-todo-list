@@ -6,8 +6,8 @@ from django.contrib import messages
 from django.shortcuts import render
 from .forms import TodoForm
 from .models import Todo
-from.forms import RespondForm
-from.models import Todo, Respond
+from .forms import RespondForm
+from .models import Todo, Respond
 # Create your views here.
 
 
@@ -25,7 +25,8 @@ def index(request):
     """
     Handle the display and submission of the TODO list.
 
-    Retrieves and displays a list of TODO items. Handles the submission of a new TODO item,
+    Retrieves and displays a list of TODO items. Handles the submission
+    of a new TODO item,
     ensuring the user is authenticated and form data is valid.
     """
     item_list = Todo.objects.order_by("-date")
@@ -43,7 +44,7 @@ def index(request):
         else:
             messages.error(request, "Error updating task!")
     form = TodoForm()
- 
+
     page = {
         "forms": form,
         "list": item_list,
@@ -51,25 +52,23 @@ def index(request):
     }
     return render(request, 'todo/index.html', page)
 
-   
+
 @login_required
 def removeTask(request, item_id):
 
     """Remove a task if the logged-in user is the author."""
-    
+
     item = get_object_or_404(Todo, id=item_id)
-    
+
     if request.user == item.author:
         if request.method == "POST":
             Todo.objects.filter(id=item_id).delete()
             return redirect('organiser')
         context = {}
         return render(request, 'todo/remove.html', context)
-        
-    
     else:
-        messages.error(request, "You do not have permission to delete this Task.")
-    
+        messages.error
+        (request, "You do not have permission to delete this Task.")
     return redirect('organiser')
 
 
@@ -79,9 +78,10 @@ def edit_task(request, item_id):
     """Edit a task if the logged-in user is the author."""
 
     item = get_object_or_404(Todo, id=item_id)
-    
+
     if request.user != item.author:
-        messages.error(request, "You do not have permission to edit this task.")
+        messages.error
+        (request, "You do not have permission to edit this task.")
         return redirect('organiser')
 
     if request.method == "POST":
@@ -95,6 +95,7 @@ def edit_task(request, item_id):
 
     context = {'form': form}
     return render(request, 'todo/edit.html', context)
+
 
 @login_required
 def respond_to_todo(request, todo_id):
@@ -116,7 +117,7 @@ def respond_to_todo(request, todo_id):
             response.author = request.user
             response.save()
             messages.success(request, "Response posted!")
-            return redirect('organiser')  
+            return redirect('organiser')
     else:
         form = RespondForm()
     return render(request, 'todo/respond.html', {'form': form})

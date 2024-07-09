@@ -9,5 +9,4 @@ urlpatterns = [
     path('remove_item/<str:item_id>/', views.removeTask, name="remove_item"),
     path('edit_item/<str:item_id>/', views.edit_task, name="edit_item"),
     path('respond/<int:todo_id>/', views.respond_to_todo, name='respond'),
-    
-] 
+]
