@@ -412,6 +412,7 @@ To create a new repository I took the following steps:
 - [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with the Nav bar.
 - [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) -Used as a source of information to check staic set up
 - [GeeksforGeeks](https://www.geeksforgeeks.org/python-todo-webapp-using-django/)-I used this site to help me get the basics of a todo list
+- [Am I Responsive](https://ui.dev/amiresponsive)
 
 
 
