@@ -129,14 +129,20 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 - Notifications to inform user when actions have been successful or unsuccessful.
 
-## **Non-MVP Features**
-- The following features are considered out of scope for the initial sprint of the MVP but may be implemented in future versions:
+## **Future Features**
+- The following features may be implemented in future sprints:
 
 - Email notification on creating a task to inform allocated family member of task.
 
 - Adding due dates for specific tasks to assist with organisation.
 
 - Search functionality for improved viewing of tasks.
+
+ -Task categories and filtering for improved organisation and prioritisation. 
+
+ -Allocated user views to help allocated user organise their own tasks, improving management of those tasks.
+
+ 
 
 ### **Home Page**
 *Navigation bar:* 
@@ -203,13 +209,6 @@ This website will offer all of these things whilst also allowing for intuitive n
 <p align="center">
 <img src="static/images/reponse_to_task.png" width="700" height="100%">
 </p>
-
-
-### **Future Features**
- -Task categories and filtering for improved organisation and prioritisation. 
- -To be completed by date to help organise tasks and help prioritisation.
- -Allocated user views to help allocated user organise their own tasks, improving management of those tasks.
- -Email notification to let users know when they have new tasks or when tasks they have allocated have been completed.
 
 
 ### **Structure**
@@ -406,10 +405,10 @@ All colours were based around Keppel
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/) | ![home page validate]() | Pass: button is a descendant of a tag |
-| Our Organiser | [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/index/) | ![Validate Our Organiser page](static/images/index_validation.png) | Pass: No Errors |
+| Home | [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/) | ![home page validate](static/images/welcome_validation.png) | Pass: No errors or warnings|
+| Our Organiser | [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/index/) | ![Validate Our Organiser page](static/images/index_validation.png) | Pass: No Errors, info only for trailing / in inaccessible code |
 | Sign In| [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/accounts/login/) | ![validate sign in](static/images/signin_validation.png) | Pass: No Errors |
-| Sign Up| [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/accounts/signup/) | ![validate sign up]() | error message?|
+| Sign Up| [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/accounts/signup/) | ![validate sign up](static/images/signup_validation.png) | error messages for allauth only, unable to access code|
 
 ## CSS
 
@@ -476,6 +475,8 @@ I used stackoverflow, code Institue coding coach and facilitator, along with Goo
 
 - Had an issue with the submit button, there had been a center element used  which is now obsolete, fixed it by using css.
 
+- Issue with HTML validation when using css in the code, for background image sizing, resolved by using a style tag.
+
 
 ## Responsive
  Development tools were used to test responsiveness on varying sized devices including laptop, mobile and iPad Air size. Full testing was
@@ -538,12 +539,16 @@ I have tested the site using the following browsers:
 
 * Google Chrome
 
-![chrome]()
+![chrome](static/images/chrome.png)
 
 
 * Microsoft Edge
 
-![microsoft edge](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/1570a9cd-6591-45db-840b-ecbe7f7aeb5b)
+![microsoft edge](static/images/edge.png)
+
+* Firefox
+
+![firefox ](![firefox](image.png))
 
 
 I can confirm that the site is responsive and looks as expected good on different screen sizes.
