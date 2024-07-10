@@ -16,11 +16,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Respond',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
                 ('response_text', models.TextField()),
                 ('date_added', models.DateTimeField(auto_now_add=True)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='responses', to=settings.AUTH_USER_MODEL)),
-                ('todo', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='responses', to='todo.todo')),
+                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='responses', to=settings.AUTH_USER_MODEL)),  # noqa
+                ('todo', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='responses', to='todo.todo')),  # noqa
             ],
         ),
     ]

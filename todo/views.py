@@ -121,7 +121,5 @@ def respond_to_todo(request, todo_id):
     else:
         initial_data = {'todo': todo}
         form = RespondForm(initial=initial_data)
-    
-    
+
     return render(request, 'todo/respond.html', {'form': form})
-       

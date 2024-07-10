@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             model_name='todo',
             name='author',
             field=models.ForeignKey(default=1,
-                                    on_delete=django.db.models.deletion.CASCADE,
-                                    related_name='todo', to=settings.AUTH_USER_MODEL),
+                                    on_delete=django.db.models.deletion.CASCADE,  # noqa
+                                    related_name='todo', to=settings.AUTH_USER_MODEL),  # noqa
         ),
     ]

@@ -1,7 +1,7 @@
 <h1 align="center">Family Organiser</h1>
 
 <p align="center">
-<img src="static/images/responsive.png" width="600" height="100%">
+<img src="static/images/responsive.png" width="1000" height="100%">
 </p>
 
 This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to post tasks, comment/respond to tasks allocated to them and have an organised easy to read and understand, management system to refer to. This project has been built for the purpose of helping busy families who are looking for a task management solution, to ease their day to day lives, and assist in freeing up time to spend with their families.
@@ -23,17 +23,27 @@ This page is primarily targeted at busy families who are looking for a task mana
 
 4. [Wireframes](#wireframes)
 
-5. [Database schema](#database-schema)
+5. [Agile](#Agile)
 
-6. [Surface](#surface)
+6. [Database schema](#database-schema)
 
-7. [Technologies Used](#technologies-used)
+7. [Surface](#surface)
 
-8. [Testing](#testing)
+8. [Technologies Used](#technologies-used)
 
-9. [Deployment](#deployment)
+9. [Testing](#testing)
 
-10. [Credits](#credits)
+10. [Validation](#validation)
+
+11. [Bugs and Issues](#bugs-and-issues)
+
+12. [Responsive](#responsive)
+
+13. [Browser Capability](#browser-capability)
+
+13. [Deployment](#deployment)
+
+14. [Credits](#credits)
 
 #
 # UX
@@ -81,7 +91,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 **Epic: Administrative Features**
 - As a site Admin I can access the dashboard so that I can manage users that are no longer part of the families site
 
-# Scope 
+## **Scope** 
 - The Family Organiser MVP aims to deliver essential features to help busy families manage their tasks and activities effectively.
   The initial version focuses on providing a streamlined and functional task management system with the following core features:
 
@@ -219,8 +229,17 @@ Wireframes for each device are linked here:
 - [Tablet](assets/documents/tablet_wireframes/)
 - [Mobile](assets/documents/mobile_wireframes/)
 
+# Agile
+
+This project used Agile principles via a projectboard on Github. 
+This helped me keep focus and stay on track, using the user stories and acceptance criteria as a roadmap.
+All user stories were given MoSCoW labels.
+<p align="center">
+<img src="staticfiles/images/Kanban.png" width="900" height="100%">
+</p>
 
 # Database schema
+ I used LucidChart to create the diagram and the arrow represent how the data fields relate to one another.
 
 <p align="center">
 <img src="static/images/database.png" width="900" height="100%">
@@ -328,25 +347,25 @@ Wireframes for each device are linked here:
 **EPIC: User Registration and Authentication**
 1. As a new user I can register an account so that I can access and allocate tasks to the site
 <p align="center">
-<img src="static/images/sign_in.png" width="500" height="300">
+<img src="static/images/sign_in.png" width="600" height="100%">
 </p>
 
 2. As a registered user I can log in to my account so that I can update access and delete tasks on the site
 <p align="center">
-<img src="static/images/sign_in.png" width="500" height="300">
+<img src="static/images/sign_in.png" width="600" height="100%">
 </p>
 
 **EPIC: Viewing Tasks and Responses**
 1. As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks 
   allocated to me
 <p align="center">
-<img src="static/images/task_list.png" width="500" height="300">
+<img src="static/images/task_list.png" width="600" height="100%">
 </p>
 
 2. As a logged-in User I can view information about tasks so that I can see what needs doing or attending, and 
   act upon those task
 <p align="center">
-<img src="static/images/our_organiser.png" width="300" height="200">
+<img src="static/images/our_organiser.png" width="600" height="100%">
 </p>
 
 
@@ -359,10 +378,10 @@ Wireframes for each device are linked here:
 
 2. As a logged-in User I can edit tasks I have made so that I can update or amend them
 <p align="center">
-<img src="static/images/update_success.png" width="500" height="100%">
+<img src="static/images/update_success.png" width="600" height="100%">
 </p>
 <p align="center">
-<img src="static/images/Edit_refused.png" width="500" height="100%">
+<img src="static/images/Edit_refused.png" width="600" height="100%">
 </p>
 
 3. As a logged-in User I can respond to tasks i have been allocated so that i can update the author 
@@ -377,9 +396,21 @@ Wireframes for each device are linked here:
 </p>
 
 
-This project was tested by accessing the Django Admin Panel. By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
+ This project was tested by accessing the Django Admin Panel.
+ By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
 
 ## Code Validation
+
+## HTML
+
+| Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/) | ![home page validate]() | Pass: button is a descendant of a tag |
+| Our Organiser | [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/index/) | ![Validate Our Organiser page](static/images/index_validation.png) | Pass: No Errors |
+| Sign In| [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/accounts/login/) | ![validate sign in](static/images/signin_validation.png) | Pass: No Errors |
+| Sign Up| [W3C](https://django-todo-list-8dadfd1a4ba3.herokuapp.com/accounts/signup/) | ![validate sign up]() | error message?|
+
+## CSS
 
  [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - was used to validate CSS
  no errors or warnings to show.
@@ -387,18 +418,52 @@ This project was tested by accessing the Django Admin Panel. By creating a Super
  <img src="static/images/css_validation.png" width="1000" height="100%">
  </p>
 
- [CI Python Validator](https://pep8ci.herokuapp.com/) - was used to validate Python
+ 
+## Python
+
+ [CI Python Validator](https://pep8ci.herokuapp.com/) - was used to validate Python Files.
+ Errors with white spaces, blank lines, and long lines corrected.
+ Migrations also tested and clear of errors.
+
+  models.py
  <p align="center">
- Errors with white spaces and blank lines, corrected.
  <img src="static/images/models_validation.png" width="1000" height="100%">
+ </p>
+ todo_site urls.py
+ <p align="center">
  <img src="static/images/url_validation.png" width="1000" height="100%">
- <img src="static/images/url_validation.png" width="1000" height="100%">
+ </p>
+ views.py
+ <p align="center">
+ <img src="static/images/views_validation.png" width="1000" height="100%">
+ </p>
+ settings.py
+ <p align="center">
  <img src="static/images/settings_validation.png" width="1000" height="100%">
+ </p>
+ forms.py
+ <p align="center">
+ <img src="static/images/forms_validation.png" width="1000" height="100%">
+ </p>
+ apps.py
+ <p align="center">
+ <img src="static/images/apps_validation.png" width="1000" height="100%">
+ </p>
+ admin.py
+ <p align="center">
+ <img src="static/images/admin_validation.png" width="1000" height="100%">
+ </p> 
+ todo urls.py
+ <p align="center">
+ <img src="static/images/todo_url_validation.png" width="1000" height="100%">
  </p>
 
 
 
 ## Bugs and Issues
+
+I used stackoverflow, code Institue coding coach and facilitator, along with Google searches to assist with solviing issues and bugs.
+
 - I had a problem where my edit button would not function. 
   The error was corrected by moving the cancel and confirm button so it was inside the form.
 
@@ -410,7 +475,80 @@ This project was tested by accessing the Django Admin Panel. By creating a Super
 
 - Had an issue with the submit button, there had been a center element used  which is now obsolete, fixed it by using css.
 
-# Deployment
+
+## Responsive
+ Development tools were used to test responsiveness on varying sized devices including laptop, mobile and iPad Air size. Full testing was
+ performed on acer laptop Aspir3 15.6inch.
+
+ - Welcome page
+
+ Mobile
+ <p align="center">
+ <img src="static/images/welcone_mobile.png" width="1000" height="100%">
+ </p>
+
+ iPad Air
+ <p align="center">
+ <img src="static/images/welcome_ipad.png" width="1000" height="100%">
+ </p>
+
+ Laptop L 1440px
+ <p align="center">
+ <img src="static/images/welcome_1440.png" width="1000" height="100%">
+ </p>
+
+ - Our Organiser Page
+
+ Mobile
+ <p align="center">
+ <img src="static/images/organise_mobile.png" width="1000" height="100%">
+ </p>
+
+ iPad Air
+ <p align="center">
+ <img src="static/images/organise_ipad.png" width="1000" height="100%">
+ </p>
+  
+ Laptop L 1440px
+ <p align="center">
+ <img src="static/images/organise_1440.png" width="1000" height="100%">
+ </p>
+
+
+ - Sign In Page
+ 
+ Mobile
+ <p align="center">
+ <img src="static/images/sign_in_mobile.png" width="1000" height="100%">
+ </p>
+
+ iPad Air
+ <p align="center">
+ <img src="static/images/signin_ipad.png" width="1000" height="100%">
+ </p>
+
+ Laptop L 1440px
+ <p align="center">
+ <img src="static/images/signin_1440.png" width="1000" height="100%">
+ </p>
+
+## Browser Capability
+I have tested the site using the following browsers:
+
+* Google Chrome
+
+![chrome]()
+
+
+* Microsoft Edge
+
+![microsoft edge](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/1570a9cd-6591-45db-840b-ecbe7f7aeb5b)
+
+
+I can confirm that the site is responsive and looks as expected good on different screen sizes.
+
+
+## Deployment
 This project was deployed using Github and Heroku.
 
 ## Github 
