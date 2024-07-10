@@ -122,3 +122,19 @@ p {
     padding-right:30px;
     margin-top:60px;
 }
+.hero-background {
+    /* Set the background image */
+    background-image: url('static/images/family.png');
+    
+    /* Cover the entire area of the container */
+    background-size: cover;
+    
+    /* Center the background image */
+    background-position: center;
+    
+    /* Prevent the background image from repeating */
+    background-repeat: no-repeat;
+    
+    /* Ensure the background image covers the full height of the container */
+    min-height: 300px; /* Adjust based on your needs */
+}

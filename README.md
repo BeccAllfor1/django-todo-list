@@ -340,7 +340,7 @@ Wireframes for each device are linked here:
 1. As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks 
   allocated to me
 <p align="center">
-<img src="" width="500" height="300">
+<img src="static/images/task_list.png" width="500" height="300">
 </p>
 
 2. As a logged-in User I can view information about tasks so that I can see what needs doing or attending, and 
@@ -377,7 +377,7 @@ Wireframes for each device are linked here:
 </p>
 
 
-This was tested by accessing the Django Admin Panel. By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
+This project was tested by accessing the Django Admin Panel. By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
 
 ## Code Validation
 
@@ -389,7 +389,7 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 
  [CI Python Validator](https://pep8ci.herokuapp.com/) - was used to validate Python
  <p align="center">
- Errors with white space and blank lines corrected.
+ Errors with white spaces and blank lines, corrected.
  <img src="static/images/models_validation.png" width="1000" height="100%">
  <img src="static/images/url_validation.png" width="1000" height="100%">
  <img src="static/images/url_validation.png" width="1000" height="100%">

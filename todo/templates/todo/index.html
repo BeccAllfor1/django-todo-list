@@ -14,7 +14,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<h1 class="flex-center"><i> OUR ORGANISER</i></h1>
-		<hr />
+		<hr >
 	</div>
 
 	<div class="row">
@@ -24,22 +24,22 @@
 			{% for i in list %}
 			<div class="card">
 				<h4 class="flex-center"><b>{{i.title}}</b></h4>
-				<hr />
+				<hr>
 				Date: {{i.date}}
-				<hr />
+				<hr>
 				Task: {{i.details}}
-				<hr />
+				<hr>
 				Allocated by: {{i.author}}
-				<hr />
+				<hr>
 				Allocated to: {{ i.allocated_to.username}}
-				<hr />
-				<hr />
+				<hr>
+				<hr>
 				{% for response in i.responses.all %}
 				<p style="font-weight: bold; color:rgb(54, 17, 25)"> Response : {{response.response_text}} </p>
-				<hr />
+				<hr>
 				<p style="font-weight: bold; color:rgb(54, 17, 25)"> Date: {{response.date_added}} </p>
 				<p style="font-weight: bold; color:rgb(54, 17, 25)"> Author: {{response.author.username}} </p>
-				<hr />
+				<hr>
 				{% endfor %}
 				<form action="{% url 'respond' i.id %}" method="GET" style="padding-left: 4%; padding-top: 3%;">
 					{% csrf_token %}
@@ -63,7 +63,7 @@
 					{% csrf_token %}
 					{% for field in forms %}
 					<div class="form-group">
-						<label for="{{ field.id_for_label }}" class="form-label">{{ field.label_tag }}</label>
+						<label for="{{ field.auto_id }}" class="form-label">{{ field.label }}</label>
 						{{ field }}
 						{% if field.errors %}
 						<div class="alert alert-danger">
@@ -75,7 +75,7 @@
 					</div>
 					{% endfor %}
 					<div class="flex-center">
-						<input type="submit" class="btn btn-primary" value="submit" />
+						<input type="submit" class="btn btn-primary" value="Submit">
 					</div>
 				</form>
 			</div>
