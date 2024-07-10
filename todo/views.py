@@ -119,5 +119,9 @@ def respond_to_todo(request, todo_id):
             messages.success(request, "Response posted!")
             return redirect('organiser')
     else:
-        form = RespondForm()
+        initial_data = {'todo': todo}
+        form = RespondForm(initial=initial_data)
+    
+    
     return render(request, 'todo/respond.html', {'form': form})
+       
