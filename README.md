@@ -149,7 +149,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 </p>
 
 <p align="center">
-<img src="static/images/navbar_drop.png" width="100%" height="100%">
+<img src="static/images/navbar_drop.png" width="600" height="100%">
 </p>
 
 
@@ -159,7 +159,7 @@ This website will offer all of these things whilst also allowing for intuitive n
   link to the Sign up page
 
 <p align="center">
-<img src="static/images/home_page.png" width="100%" height="100%">
+<img src="static/images/home_page.png" width="600" height="100%">
 </p>
 
 
@@ -171,7 +171,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Responses by author will appear below the task
 
 <p align="center">
-<img src="static/images/our_organiser.png" width="100%" height="100%">
+<img src="static/images/our_organiser.png" width="700" height="100%">
 </p>
 
 
@@ -179,7 +179,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Appears on every page snd contains social links
 
 <p align="center">
-<img src="static/images/footer.png" width="100%" height="100%">
+<img src="static/images/footer.png" width="800" height="100%">
 </p>
 
 
@@ -187,11 +187,11 @@ This website will offer all of these things whilst also allowing for intuitive n
 - The Sign Up / In button takes users to the Sign up page where they can also find a link to the Sign In 
   page where they can create an account
 <p align="center">
-<img src="static/images/sign_up.png" width="100%" height="100%">
+<img src="static/images/sign_up.png" width="700" height="100%">
 </p>
 
 <p align="center">
-<img src="static/images/sign_in.png" width="100%" height="100%">
+<img src="static/images/sign_in.png" width="700" height="100%">
 </p>
 
 
@@ -201,7 +201,7 @@ This website will offer all of these things whilst also allowing for intuitive n
   is signed in.
 - only a logged in user can leave a response.
 <p align="center">
-<img src="static/images/reponse_to_task.png" width="100%" height="100%">
+<img src="static/images/reponse_to_task.png" width="700" height="100%">
 </p>
 
 
@@ -235,7 +235,7 @@ This project used Agile principles via a projectboard on Github.
 This helped me keep focus and stay on track, using the user stories and acceptance criteria as a roadmap.
 All user stories were given MoSCoW labels.
 <p align="center">
-<img src="staticfiles/images/Kanban.png" width="900" height="100%">
+<img src="static/images/agile.png" width="900" height="100%">
 </p>
 
 # Database schema
@@ -270,9 +270,10 @@ All user stories were given MoSCoW labels.
 ## Design 
 
 ## Chosen Color 
+
+All colours were based around Keppel
 <p align="center">
- - All colours were based around Keppel
-<img src="static/images/color.png" width="800" height="300">
+<img src="static/images/color.png" width="500" height="300">
 </p>
 
 - **white** - navbar background colour fits in with the minimalist feel of the site.
@@ -317,7 +318,7 @@ All user stories were given MoSCoW labels.
 
 [Cloudinary](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=492438439811&utm_term=cloudinary&gclid=Cj0KCQiAt8WOBhDbARIsANQLp96hTerzfFJ_P9lX0tEYEdtM3tSsYB6fhw-x3wQxOO0oc4hXm-A2ZBUaAptIEALw_wcB) - loaded for future feature use.
 
-[Summernote](https://summernote.org/)
+[Summernote](https://summernote.org/)- To add to admin page and for future potential features.
 
 [Google Fonts](https://fonts.google.com/https://fonts.google.com/) - provide fonts for the website.
 
