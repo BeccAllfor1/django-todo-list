@@ -400,7 +400,7 @@ All colours were based around Keppel
 
 
  This project was tested by accessing the Django Admin Panel.
- By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
+ By creating a Superuser we can access the Django Admin Panel where the administrator can perform all functionalities.
 
 ## Links
 
@@ -477,8 +477,8 @@ All colours were based around Keppel
 
 I used stackoverflow, code Institue coding coach and facilitator, along with Google searches to assist with solving issues and bugs.
 
-- I had a problem where my edit button would not function. 
-  The error was corrected by moving the cancel and confirm button so it was inside the form.
+- I had a problem where my edit button would not function. The error was corrected by moving the cancel and confirm button 
+ so it was inside the form.
 
 - I had a bottom scroll appear on my organiser page so solved this by adding 
  a container-fluid.
@@ -607,7 +607,7 @@ To create a new repository I took the following steps:
 - Clicked the green ‘new’ button. This takes you to the create new repository page.
 - Once there under ‘repository template’ I chose the code institute template from the dropdown menu.
 - I input a repository name then clicked the green ‘create repository button’ at the bottom of the page.
-- Once created I opened the new repository and clicked the green ‘Gitpod’ button to create a workspace in Gitpod for editing.
+- Once created I opened the new repository and opened the code institute ide using the link https://codeinstitute-ide.net/ , I then clicked the black ‘New Workspace’ button to create a workspace in Gitpod for editing.
 
 ## Django and Heroku 
 - To get the Django framework installed and set up I followed the Code institutes [Django Blog cheatsheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf)
@@ -616,9 +616,9 @@ To create a new repository I took the following steps:
 
 - [Summernote](https://github.com/summernote/django-summernote) - I learnt how to change summernote toolbar
 - [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with the Nav bar.
-- [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) -Used as a source of information to check staic set up
-- [GeeksforGeeks](https://www.geeksforgeeks.org/python-todo-webapp-using-django/)-I used this site to help me get the basics of a todo list
-- [Am I Responsive](https://ui.dev/amiresponsive)- helped me check my sites responsivity.
+- [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) - Used as a source of information to check staic set up
+- [GeeksforGeeks](https://www.geeksforgeeks.org/python-todo-webapp-using-django/) - I used this site to help me get the basics of a todo list
+- [Am I Responsive](https://ui.dev/amiresponsive) - helped me check my sites responsivity.
 
 
 
@@ -627,4 +627,4 @@ To create a new repository I took the following steps:
 
 
 ## Acknowledgements
-- Thanks to Code Institute and facilitator and coding coaches.
+- Thanks to Code Institute, facilitator and coding coaches.
