@@ -41,9 +41,11 @@ This page is primarily targeted at busy families who are looking for a task mana
 
 13. [Browser Capability](#browser-capability)
 
-13. [Deployment](#deployment)
+14. [Performance](#performance)
 
-14. [Credits](#credits)
+15. [Deployment](#deployment)
+
+16. [Credits](#credits)
 
 #
 # UX
@@ -138,9 +140,9 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 - Search functionality for improved viewing of tasks.
 
- -Task categories and filtering for improved organisation and prioritisation. 
+- Task categories and filtering for improved organisation and prioritisation. 
 
- -Allocated user views to help allocated user organise their own tasks, improving management of those tasks.
+- Allocated user views to help allocated user organise their own tasks, improving management of those tasks.
 
  
 
@@ -201,7 +203,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 </p>
 
 
-### **Response page**
+### **Response Form Page**
 - The main body of the page contains a response form, with a section for title, a short description and a date, 
   the reponse author populates automatically according to who 
   is signed in.
@@ -228,20 +230,21 @@ Wireframes for each device are linked here:
 - [Tablet](assets/documents/tablet_wireframes/)
 - [Mobile](assets/documents/mobile_wireframes/)
 
-# Agile
-
-This project used Agile principles via a projectboard on Github. 
-This helped me keep focus and stay on track, using the user stories and acceptance criteria as a roadmap.
-All user stories were given MoSCoW labels.
-<p align="center">
-<img src="static/images/agile.png" width="900" height="100%">
-</p>
 
 # Database schema
  I used LucidChart to create the diagram and the arrow represent how the data fields relate to one another.
 
 <p align="center">
 <img src="static/images/database.png" width="900" height="100%">
+</p>
+
+## Agile
+
+This project used Agile principles via a projectboard on Github. 
+This helped me keep focus and stay on track, using the user stories and acceptance criteria as a roadmap.
+All user stories were given MoSCoW labels.
+<p align="center">
+<img src="static/images/agile.png" width="900" height="100%">
 </p>
 
 ## Models
@@ -264,7 +267,7 @@ All user stories were given MoSCoW labels.
 <img src="static/images/user_flow.png" width="900" height="100%">
 </p>
 
-## Surface
+### Surface
 
 ## Design 
 
@@ -347,7 +350,7 @@ All colours were based around Keppel
 **EPIC: User Registration and Authentication**
 1. As a new user I can register an account so that I can access and allocate tasks to the site
 <p align="center">
-<img src="static/images/sign_in.png" width="600" height="100%">
+<img src="static/images/sign_up.png" width="600" height="100%">
 </p>
 
 2. As a registered user I can log in to my account so that I can update access and delete tasks on the site
@@ -356,7 +359,7 @@ All colours were based around Keppel
 </p>
 
 **EPIC: Viewing Tasks and Responses**
-1. As a logged-in User I can view a list of tasks so that I can browse through and respond or read tasks 
+1. As a logged-in user I can view a list of tasks so that I can browse through and respond or read tasks 
   allocated to me
 <p align="center">
 <img src="static/images/task_list.png" width="600" height="100%">
@@ -398,6 +401,17 @@ All colours were based around Keppel
 
  This project was tested by accessing the Django Admin Panel.
  By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalities
+
+## Links
+
+| Link | Expected Outcome | Grade |
+| ------- | ---------------- | ----- |
+| Logo | Navigates to the home page when clicked | Fail |
+| Home | Navigates to the home page when clicked | Pass |
+| Our Organiser | Navigates to Our Organiser page when clicked | Pass |
+| Sign Up | Navigates to a Sign Up form when clicked | Pass |
+| sign In | Navigates to a screen where users can Sign in when clicked | Pass |
+| Logout | Navigates to a page confirming for the user to log out | Pass |
 
 ## Code Validation
 
@@ -459,10 +473,9 @@ All colours were based around Keppel
  </p>
 
 
-
 ## Bugs and Issues
 
-I used stackoverflow, code Institue coding coach and facilitator, along with Google searches to assist with solviing issues and bugs.
+I used stackoverflow, code Institue coding coach and facilitator, along with Google searches to assist with solving issues and bugs.
 
 - I had a problem where my edit button would not function. 
   The error was corrected by moving the cancel and confirm button so it was inside the form.
@@ -486,34 +499,34 @@ I used stackoverflow, code Institue coding coach and facilitator, along with Goo
 
  Mobile
  <p align="center">
- <img src="static/images/welcone_mobile.png" width="1000" height="100%">
+ <img src="static/images/welcone_mobile.png" width="500" height="100%">
  </p>
 
  iPad Air
  <p align="center">
- <img src="static/images/welcome_ipad.png" width="1000" height="100%">
+ <img src="static/images/welcome_ipad.png" width="500" height="100%">
  </p>
 
  Laptop L 1440px
  <p align="center">
- <img src="static/images/welcome_1440.png" width="1000" height="100%">
+ <img src="static/images/welcome_1440.png" width="500" height="100%">
  </p>
 
  - Our Organiser Page
 
  Mobile
  <p align="center">
- <img src="static/images/organise_mobile.png" width="1000" height="100%">
+ <img src="static/images/organise_mobile.png" width="500" height="100%">
  </p>
 
  iPad Air
  <p align="center">
- <img src="static/images/organise_ipad.png" width="1000" height="100%">
+ <img src="static/images/organise_ipad.png" width="500" height="100%">
  </p>
   
  Laptop L 1440px
  <p align="center">
- <img src="static/images/organise_1440.png" width="1000" height="100%">
+ <img src="static/images/organise_1440.png" width="500" height="100%">
  </p>
 
 
@@ -521,17 +534,17 @@ I used stackoverflow, code Institue coding coach and facilitator, along with Goo
  
  Mobile
  <p align="center">
- <img src="static/images/sign_in_mobile.png" width="1000" height="100%">
+ <img src="static/images/sign_in_mobile.png" width="500" height="100%">
  </p>
 
  iPad Air
  <p align="center">
- <img src="static/images/signin_ipad.png" width="1000" height="100%">
+ <img src="static/images/signin_ipad.png" width="500" height="100%">
  </p>
 
  Laptop L 1440px
  <p align="center">
- <img src="static/images/signin_1440.png" width="1000" height="100%">
+ <img src="static/images/signin_1440.png" width="500" height="100%">
  </p>
 
 ## Browser Capability
@@ -548,10 +561,39 @@ I have tested the site using the following browsers:
 
 * Firefox
 
-![firefox ](![firefox](image.png))
+![firefox ](static/images/firefox.png)
 
 
 I can confirm that the site is responsive and looks as expected good on different screen sizes.
+
+## Performance
+
+Lighthouse was used to evaluate performance using mobile and desktop. 
+
+* Mobile 
+ 
+ Home page
+ <p align="center">
+ <img src="static/images/mobile_lighthouse_home 2024-07-10 142525.png" width="500" height="100%">
+ </p>
+
+ Our Organiser page
+ <p align="center">
+ <img src="static/images/mobile_orgabiser_lighthouse 2024-07-10 143206.png" width="500" height="100%">
+ </p>
+
+
+ * Desktop
+
+  Home page
+ <p align="center">
+ <img src="static/images/desktop_lighhouse_home 2024-07-10 142929.png" width="500" height="100%">
+ </p>
+
+ Our Organiser page
+ <p align="center">
+ <img src="static/images/desktop_organiser_lighthouse 2024-07-10 143339.png" width="500" height="100%">
+ </p>
 
 
 ## Deployment
@@ -576,12 +618,12 @@ To create a new repository I took the following steps:
 - [Code Institute](https://codeinstitute.net/ie/) - 'I think therefore I blog' project helped me with the Nav bar.
 - [Django documentation](https://docs.djangoproject.com/en/4.0/topics/pagination/) -Used as a source of information to check staic set up
 - [GeeksforGeeks](https://www.geeksforgeeks.org/python-todo-webapp-using-django/)-I used this site to help me get the basics of a todo list
-- [Am I Responsive](https://ui.dev/amiresponsive)
+- [Am I Responsive](https://ui.dev/amiresponsive)- helped me check my sites responsivity.
 
 
 
 ## Media
-- All image taken from[Pexels](https://www.pexels.com/@panditwiguna/)
+- Image taken from[Pexels](https://www.pexels.com/@panditwiguna/)
 
 
 ## Acknowledgements
