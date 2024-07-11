@@ -406,7 +406,7 @@ All colours were based around Keppel
 
 | Link | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
-| Logo | Navigates to the home page when clicked | Fail |
+| Logo | Navigates to the home page when clicked | Pass |
 | Home | Navigates to the home page when clicked | Pass |
 | Our Organiser | Navigates to Our Organiser page when clicked | Pass |
 | Sign Up | Navigates to a Sign Up form when clicked | Pass |
