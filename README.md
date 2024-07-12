@@ -585,7 +585,8 @@ Lighthouse was used to evaluate performance using mobile and desktop.
 
  * Desktop
 
-  Home page
+  Home page - unfortunately the image is causing the loading to be slower than id like, I was unable to optimize this further through tinypg without
+  changing to webp and altering the storage use.
  <p align="center">
  <img src="static/images/desktop_lighhouse_home 2024-07-10 142929.png" width="500" height="100%">
  </p>
