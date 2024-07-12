@@ -483,8 +483,8 @@ I used stackoverflow, code Institue coding coach and facilitator, along with Goo
 - I had a bottom scroll appear on my organiser page so solved this by adding 
  a container-fluid.
 
-- My styling was not applying to the h1 in index.html, i discovered this was 
- due to the center tag, so i removed this and used css instead.
+- My styling was not applying to the h1 in index.html, I discovered this was 
+ due to the center tag, so I removed this and used css instead.
 
 - Had an issue with the submit button, there had been a center element used  which is now obsolete, fixed it by using css.
 
