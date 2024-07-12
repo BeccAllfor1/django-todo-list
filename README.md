@@ -490,6 +490,9 @@ I used stackoverflow, code Institue coding coach and facilitator, along with Goo
 
 - Issue with HTML validation when using css in the code, for background image sizing, resolved by using a style tag.
 
+- Issue with hero image causing slowere loading time than I would have liked, identifyed in Lighthouse. All other pages and
+ devices loading well. Tried to use tinypng but file too large.
+
 
 ## Responsive
  Development tools were used to test responsiveness on varying sized devices including laptop, mobile and iPad Air size. Full testing was
